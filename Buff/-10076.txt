@@ -1,0 +1,292 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.BuffTableData,Assembly-CSharp",
+			"IconPath" : "",
+			"Id" : -10076,
+			"Name" : {
+				"TarKey" : "dc0634c28b00325e8a6fd4cda16b8f51",
+				"SheetKey" : "",
+				"InputText" : "法术增幅",
+				"Characteristic" : null
+			},
+			"Des" : {
+				"TarKey" : "",
+				"SheetKey" : "",
+				"InputText" : "法术施放后层数+1，每层使造成的法术伤害增加5点",
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1007,
+				"Key" : "icon_buff_shijietouying"
+			},
+			"Comment" : "七曜",
+			"BuffType" : 1,
+			"BuffEffectType" : 1,
+			"OverlayType" : 1,
+			"LayerCount" : {
+				"Value" : "0"
+			},
+			"OverrideInitLayer" : false,
+			"InitLayer" : 0,
+			"MaxLayer" : 0,
+			"FxPlayType" : 1,
+			"UseFxPrefab" : {
+				"FxPath" : null,
+				"UseFrameEffect" : false,
+				"FxRes" : {
+					"ReferenceType" : 10001,
+					"Key" : null
+				},
+				"EffectName" : null,
+				"EffectAnimName" : null,
+				"PlayPoint" : 0
+			},
+			"PlayFxInBattle" : false,
+			"PlayFxInExplore" : false,
+			"DelayTime" : 0,
+			"EffectClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"EndClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"IsClipLoop" : false,
+			"Duration" : 0,
+			"Priority" : 0,
+			"IsDeathClear" : false,
+			"IsShowUI" : true,
+			"Arrts" : [
+				
+			],
+			"Events" : [
+				{
+					"EBuffTrigger" : 1,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_AdditionalDamageOption,Assembly-CSharp",
+							"IsRemove" : true,
+							"IsGetDamage" : false,
+							"DamageSourceLimits" : [
+								
+							],
+							"WeaponTypeLimits" : [
+								
+							],
+							"DamageAttrLimits" : [
+								
+							],
+							"AttackTypeLimits" : [
+								
+							],
+							"DamageTypeLimits" : [
+								
+							],
+							"UseAllyCount" : false,
+							"RatioByBuffLayer" : false,
+							"RatioByCrazyTrait" : false,
+							"MaxRatio" : 0,
+							"BuffId" : 0,
+							"StrValue" : null,
+							"SourceKey" : "-1080693148Buff_AdditionalDamageOption"
+						},{
+							"__type" : "MOD.Buff_AdditionalDamageOption,Assembly-CSharp",
+							"IsRemove" : false,
+							"IsGetDamage" : false,
+							"DamageSourceLimits" : [
+								
+							],
+							"WeaponTypeLimits" : [
+								
+							],
+							"DamageAttrLimits" : [
+								
+							],
+							"AttackTypeLimits" : [
+								
+							],
+							"DamageTypeLimits" : [
+								2
+							],
+							"UseAllyCount" : false,
+							"RatioByBuffLayer" : true,
+							"RatioByCrazyTrait" : false,
+							"MaxRatio" : 0,
+							"BuffId" : -10076,
+							"StrValue" : "5",
+							"SourceKey" : "1425816088Buff_AdditionalDamageOption"
+						},{
+							"__type" : "MOD.Buff_EquipFreedomOption,Assembly-CSharp",
+							"Data" : {
+								"IsOpen" : true,
+								"EquipTypes" : [
+									1
+								],
+								"ItemId" : -10013
+							},
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 29,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_AdditionalDamageOption,Assembly-CSharp",
+							"IsRemove" : true,
+							"IsGetDamage" : false,
+							"DamageSourceLimits" : [
+								
+							],
+							"WeaponTypeLimits" : [
+								
+							],
+							"DamageAttrLimits" : [
+								
+							],
+							"AttackTypeLimits" : [
+								
+							],
+							"DamageTypeLimits" : [
+								
+							],
+							"UseAllyCount" : false,
+							"RatioByBuffLayer" : false,
+							"RatioByCrazyTrait" : false,
+							"MaxRatio" : 0,
+							"BuffId" : 0,
+							"StrValue" : null,
+							"SourceKey" : "-362641972Buff_AdditionalDamageOption"
+						},{
+							"__type" : "MOD.Buff_AdditionalDamageOption,Assembly-CSharp",
+							"IsRemove" : false,
+							"IsGetDamage" : false,
+							"DamageSourceLimits" : [
+								
+							],
+							"WeaponTypeLimits" : [
+								
+							],
+							"DamageAttrLimits" : [
+								
+							],
+							"AttackTypeLimits" : [
+								
+							],
+							"DamageTypeLimits" : [
+								2
+							],
+							"UseAllyCount" : false,
+							"RatioByBuffLayer" : true,
+							"RatioByCrazyTrait" : false,
+							"MaxRatio" : 0,
+							"BuffId" : -10076,
+							"StrValue" : "5",
+							"SourceKey" : "2143867264Buff_AdditionalDamageOption"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 83,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_AddMagicEffectRound,Assembly-CSharp",
+							"TriggerRound" : 2,
+							"SourceKey" : "51998836Buff_AddMagicEffectRound"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 84,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_BuffLayerOption,Assembly-CSharp",
+							"IsSelf" : true,
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"BuffId" : 0,
+							"LayerCount" : {
+								"Value" : "1"
+							},
+							"ChangeToSpecLayer" : false,
+							"SpecLayer" : 0,
+							"IgnoreLayerChangeOnFirstRound" : false,
+							"SourceKey" : "1210851400Buff_BuffLayerOption"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 5,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_TriggerRandomMagicSkillWihtNoCost,Assembly-CSharp",
+							"SourceKey" : "-1135365408Buff_TriggerRandomMagicSkillWihtNoCost"
+						}
+					],
+					"CanBeDisabled" : false
+				}
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

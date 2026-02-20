@@ -1,0 +1,108 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.BuffTableData,Assembly-CSharp",
+			"IconPath" : null,
+			"Id" : -10005,
+			"Name" : {
+				"TarKey" : "b1291ce8cc82ee850049f9ed1c120731",
+				"SheetKey" : "",
+				"InputText" : "七曜碎片·绿"
+			},
+			"Des" : {
+				"TarKey" : "",
+				"SheetKey" : "",
+				"InputText" : "矍铄：法术不消耗精神"
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1007,
+				"Key" : "icon_buff_gaojiyuhe"
+			},
+			"Comment" : "七曜",
+			"BuffType" : 1,
+			"BuffEffectType" : 1,
+			"OverlayType" : 2,
+			"LayerCount" : {
+				"Value" : null
+			},
+			"OverrideInitLayer" : false,
+			"InitLayer" : 0,
+			"MaxLayer" : 0,
+			"FxPlayType" : 1,
+			"UseFxPrefab" : {
+				"FxPath" : null,
+				"PlayPoint" : 0
+			},
+			"EffectClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"IsClipLoop" : false,
+			"Duration" : 0,
+			"Priority" : 0,
+			"IsDeathClear" : false,
+			"IsShowUI" : true,
+			"Arrts" : [
+				
+			],
+			"Events" : [
+				{
+					"EBuffTrigger" : 2,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_IgnoreMagicSanCostOption,Assembly-CSharp",
+							"IsIgnore" : true,
+							"SourceKey" : null
+						}
+					]
+				},{
+					"EBuffTrigger" : 3,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_IgnoreMagicSanCostOption,Assembly-CSharp",
+							"IsIgnore" : false,
+							"SourceKey" : null
+						}
+					]
+				},{
+					"EBuffTrigger" : 12,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_IgnoreMagicSanCostOption,Assembly-CSharp",
+							"IsIgnore" : false,
+							"SourceKey" : null
+						}
+					]
+				}
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

@@ -1,0 +1,119 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.BuffTableData,Assembly-CSharp",
+			"IconPath" : null,
+			"Id" : -10006,
+			"Name" : {
+				"TarKey" : "2f44dae31466721743c4d5ed961fbbaa",
+				"SheetKey" : "",
+				"InputText" : "七曜碎片·青",
+				"Characteristic" : null
+			},
+			"Des" : {
+				"TarKey" : "",
+				"SheetKey" : "",
+				"InputText" : "熵减：法术伤害减伤",
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1007,
+				"Key" : "icon_buff_xiegou"
+			},
+			"Comment" : "七曜",
+			"BuffType" : 1,
+			"BuffEffectType" : 1,
+			"OverlayType" : 2,
+			"LayerCount" : {
+				"Value" : null
+			},
+			"OverrideInitLayer" : false,
+			"InitLayer" : 0,
+			"MaxLayer" : 0,
+			"FxPlayType" : 1,
+			"UseFxPrefab" : {
+				"FxPath" : null,
+				"UseFrameEffect" : false,
+				"FxRes" : {
+					"ReferenceType" : 10001,
+					"Key" : null
+				},
+				"EffectName" : null,
+				"EffectAnimName" : null,
+				"PlayPoint" : 0
+			},
+			"PlayFxInBattle" : false,
+			"PlayFxInExplore" : false,
+			"DelayTime" : 0,
+			"EffectClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"EndClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"IsClipLoop" : false,
+			"Duration" : 0,
+			"Priority" : 0,
+			"IsDeathClear" : false,
+			"IsShowUI" : true,
+			"Arrts" : [
+				
+			],
+			"Events" : [
+				{
+					"EBuffTrigger" : 1,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_ImmuneDamageOption,Assembly-CSharp",
+							"Data" : {
+								"IsOpen" : true,
+								"ImmuMaxDamage" : false,
+								"ImmuFall" : false,
+								"IsRangeLimit" : false,
+								"MaxRangeValue" : 0,
+								"RangeResult" : 0,
+								"OnlyImmuEnemyDamage" : false,
+								"DamageTypeList" : [
+									
+								],
+								"ReductionList" : [
+									{
+										"AddEffectType" : 0,
+										"Type" : 2,
+										"ReduceValue" : 5
+									}
+								],
+								"RoleReductionList" : [
+									
+								]
+							},
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				}
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

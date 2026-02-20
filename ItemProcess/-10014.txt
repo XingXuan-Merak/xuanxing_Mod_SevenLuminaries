@@ -1,0 +1,79 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.ItemProcessData,Assembly-CSharp",
+			"Id" : -10014,
+			"BigSuccessId" : 0,
+			"FailureId" : 0,
+			"BigFailureId" : 0,
+			"ItemAffixDatas" : [
+				
+			],
+			"ProcessDes" : {
+				"TarKey" : null,
+				"SheetKey" : "",
+				"InputText" : null
+			},
+			"ModList" : [
+				"所有模组"
+			],
+			"IsShow" : true,
+			"ProcessType" : 5,
+			"ItemProcessSchemes" : [
+				{
+					"CanMakeDirectly" : true,
+					"CheckSelectOperationData" : {
+						"BestChecks" : [
+							
+						],
+						"GenerallyChecks" : [
+							
+						],
+						"BadChecks" : [
+							
+						],
+						"PassSelects" : [
+							
+						]
+					},
+					"ExtraAttrCosts" : [
+						{
+							"ExtraAttr" : 103,
+							"Count" : 7
+						}
+					],
+					"ItemCosta" : [
+						{
+							"ItemId" : -10005,
+							"Count" : 1
+						},{
+							"ItemId" : -10006,
+							"Count" : 1
+						},{
+							"ItemId" : -10007,
+							"Count" : 1
+						},{
+							"ItemId" : -10008,
+							"Count" : 1
+						},{
+							"ItemId" : -10009,
+							"Count" : 1
+						},{
+							"ItemId" : -10010,
+							"Count" : 1
+						},{
+							"ItemId" : -10011,
+							"Count" : 1
+						}
+					],
+					"OriginCount" : 49,
+					"EItemProcessType" : 1,
+					"CanRemedy" : false
+				}
+			],
+			"BindingMagic" : -1,
+			"EditorSheetKey" : null
+		}
+	}
+}

@@ -1,0 +1,199 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.MagicData,Assembly-CSharp",
+			"Id" : -10003,
+			"Name" : {
+				"TarKey" : "3ceac1cdd2564f7afce6f0ce2367e8a5",
+				"SheetKey" : "",
+				"InputText" : "魔力屏障",
+				"Characteristic" : null
+			},
+			"MagicDesc" : {
+				"TarKey" : "aa5d72e7048969afe8aa751e096a70d2",
+				"SheetKey" : "",
+				"InputText" : "释放魔力，生成一道魔力屏障",
+				"Characteristic" : null
+			},
+			"EffectDesc" : {
+				"TarKey" : "8804a4ace6ae89bc468775b142bd1023",
+				"SheetKey" : "",
+				"InputText" : "每回合损耗3点精神与魔力以维持魔力屏障，持续至战斗结束或没有足够的魔法值为止\n免疫法术伤害且受到的伤害减少5点，即将倒下时屏障破碎并恢复1点生命值",
+				"Characteristic" : null
+			},
+			"SpritePath" : "UI\/Textures\/Icon\/MagicCard\/icon_magic_chiyinshu",
+			"SpritePathReference" : {
+				"ReferenceType" : 1008,
+				"Key" : "icon_magic_weiruizhiyin"
+			},
+			"Type" : 2,
+			"CannotBeCancelled" : true,
+			"MagicGetType" : 2,
+			"ShowCheckList" : [
+				
+			],
+			"AnyCheckReach" : false,
+			"BuffsLink" : [
+				
+			],
+			"Terms" : [
+				
+			],
+			"DisableOverlay" : true,
+			"UseLimit" : 3,
+			"TargetSelectDatas" : [
+				{
+					"Checks" : [
+						
+					],
+					"TargetType" : 7,
+					"TargetId" : 0,
+					"UseWeaponTargetType" : false,
+					"RandomSelectTarget" : false,
+					"CanChooseDeathRole" : false
+				}
+			],
+			"CheckList" : [
+				
+			],
+			"AnyLimitCheckReach" : false,
+			"TargetFilterExcluded" : false,
+			"Costs" : [
+				{
+					"DataType" : 2,
+					"Attribute" : 0,
+					"ExtraAttr" : 103,
+					"Skill" : 0,
+					"ItemFilter" : null,
+					"Count" : "3",
+					"CostType" : 1
+				},{
+					"DataType" : 2,
+					"Attribute" : 0,
+					"ExtraAttr" : 102,
+					"Skill" : 0,
+					"ItemFilter" : null,
+					"Count" : "3",
+					"CostType" : 1
+				}
+			],
+			"CostRound" : 1,
+			"NeedDice" : false,
+			"DiceType" : 0,
+			"DiceCheckType" : 0,
+			"ResultCheckType" : 0,
+			"DiceConfig" : {
+				"SelfDiceData" : null,
+				"TargetDiceData" : null
+			},
+			"SkillValue" : 0,
+			"NeedDamage" : false,
+			"CustomDamage" : null,
+			"DamageValueType" : 0,
+			"IsCritical" : false,
+			"DamageRatio" : 1,
+			"MagicEffectList" : [
+				{
+					"Trigger" : 5,
+					"EffectChecks" : [
+						
+					],
+					"EffectOption" : [
+						{
+							"__type" : "BattleSkillEvent.BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 1,
+							"BuffId" : -10013,
+							"TargetType" : 1,
+							"LayerValue" : 0,
+							"IgnoreLayerChangeOnFirstRound" : false,
+							"IsTemp" : false,
+							"CustomChangeCount" : false,
+							"ChangeCount" : null,
+							"RemoveByEffectType" : false,
+							"BuffEffectType" : 0,
+							"ExceptList" : [
+								
+							]
+						}
+					],
+					"AnyCheckReach" : false
+				}
+			],
+			"EffectShow" : {
+				"Duration" : 4.3,
+				"EffectShows" : [
+					{
+						"__type" : "MOD.PlayRoleEffectData,Assembly-CSharp",
+						"IsSelf" : true,
+						"UseFrameEffect" : false,
+						"FxPath" : "Effect\/Prefabs\/FX_Role_Obliviate",
+						"FxPathReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"EffectName" : null,
+						"EffectAnimName" : null,
+						"Duration" : 1.8,
+						"PlayCenterPoint" : false,
+						"UseSameFx" : true,
+						"PointUseFrameEffect" : false,
+						"PlayCenterPointFxPath" : null,
+						"PointFxPathReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"PointEffectName" : null,
+						"PointEffectAnimName" : null,
+						"PointType" : 2,
+						"IsGroupCenter" : false,
+						"DelayTime" : 0
+					},{
+						"__type" : "MOD.PlayRoleEffectData,Assembly-CSharp",
+						"IsSelf" : false,
+						"UseFrameEffect" : false,
+						"FxPath" : "",
+						"FxPathReference" : {
+							"ReferenceType" : 10001,
+							"Key" : "FX_Magic_chiyinshu"
+						},
+						"EffectName" : null,
+						"EffectAnimName" : null,
+						"Duration" : 2.5,
+						"PlayCenterPoint" : false,
+						"UseSameFx" : true,
+						"PointUseFrameEffect" : false,
+						"PlayCenterPointFxPath" : null,
+						"PointFxPathReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"PointEffectName" : null,
+						"PointEffectAnimName" : null,
+						"PointType" : 2,
+						"IsGroupCenter" : false,
+						"DelayTime" : 1.8
+					},{
+						"__type" : "MOD.PlaySoundData,Assembly-CSharp",
+						"AudioClip" : {
+							"AudioRes" : "Sound\/Audio\/FX\/Magic\/audio_magic_chiyinshu",
+							"AudioReference" : {
+								"ReferenceType" : 2,
+								"Key" : "audio_magic_chiyinshu"
+							},
+							"Volume" : 1,
+							"FadeTime" : 1
+						},
+						"IsLoop" : false,
+						"StopOnBattleFinish" : false,
+						"DelayTime" : 1.8
+					}
+				]
+			},
+			"BindingCharacter" : false,
+			"BindingHero" : false,
+			"BindingCharacterId" : 0,
+			"EditorSheetKey" : null
+		}
+	}
+}

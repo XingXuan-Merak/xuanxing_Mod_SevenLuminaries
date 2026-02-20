@@ -1,0 +1,480 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.ItemData,Assembly-CSharp",
+			"IconPath" : null,
+			"ItemId" : -10011,
+			"UniqueKey" : null,
+			"ItemName" : {
+				"TarKey" : "2232700acbc6222d88bae83075471d10",
+				"SheetKey" : "",
+				"InputText" : "七曜碎片·紫",
+				"Characteristic" : null
+			},
+			"ItemDes" : {
+				"TarKey" : "8cae474392ed228289c2166c6a69ff29",
+				"SheetKey" : "",
+				"InputText" : "七曜水晶的一部分",
+				"Characteristic" : null
+			},
+			"ItemEffectDes" : {
+				"TarKey" : "",
+				"SheetKey" : "",
+				"InputText" : null,
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1004,
+				"Key" : "icon_item_baiseshuijing"
+			},
+			"Price" : 0,
+			"ChargingCount" : 7,
+			"ReplaceChargingConfig" : [
+				{
+					"DisableTrigger" : true,
+					"TriggerType" : 0,
+					"ItemCheckList" : [
+						{
+							"__type" : "ItemEvent.RoleAttrCheck,Assembly-CSharp",
+							"EattrType" : 103,
+							"EheroType" : 0,
+							"EskillType" : 0,
+							"Type" : 3,
+							"TargetValue" : 0
+						}
+					],
+					"BaseOptions" : [
+						{
+							"__type" : "MOD.Item_RoleAttrOption,Assembly-CSharp",
+							"IsConversionBuff" : false,
+							"Datas" : [
+								{
+									"IsTrackSource" : false,
+									"RoleAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleExAttr" : {
+										"Type" : 103,
+										"Value" : "-1",
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSkill" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSystemAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"ExDiceData" : {
+										"ExploreSkill" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"HeroAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"ExtraAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										}
+									}
+								}
+							],
+							"IsRemove" : false,
+							"SourceKey" : null
+						}
+					]
+				}
+			],
+			"AutoDestruct" : false,
+			"Disassemble" : {
+				"Items" : {
+					"Type" : 7,
+					"Ids" : [
+						
+					]
+				},
+				"PartsCount" : 0
+			},
+			"IsCantDisboard" : false,
+			"DesignTag" : 0,
+			"TagList" : [
+				"七曜"
+			],
+			"ItemAttrValue" : [
+				6,8
+			],
+			"MythicalId" : 0,
+			"ItemType" : 2,
+			"ItemStaticAffixList" : [
+				{
+					"IsStatic" : true,
+					"StaticAffixType" : 9,
+					"DynamicAffixType" : 0,
+					"Level" : 1,
+					"Attr" : [
+						
+					],
+					"Skill" : [
+						
+					],
+					"ExtraAttr" : [
+						
+					]
+				}
+			],
+			"ItemDynamicAffixList" : [
+				{
+					"IsStatic" : false,
+					"StaticAffixType" : 0,
+					"DynamicAffixType" : 4,
+					"Level" : 1,
+					"Attr" : [
+						
+					],
+					"Skill" : [
+						
+					],
+					"ExtraAttr" : [
+						
+					]
+				},{
+					"IsStatic" : false,
+					"StaticAffixType" : 0,
+					"DynamicAffixType" : 1,
+					"Level" : 1,
+					"Attr" : [
+						
+					],
+					"Skill" : [
+						
+					],
+					"ExtraAttr" : [
+						
+					]
+				}
+			],
+			"IsBindCharacter" : false,
+			"BuffsLink" : [
+				
+			],
+			"Terms" : [
+				3,6
+			],
+			"ConfigData" : [
+				
+			],
+			"EquipmentConfigData" : {
+				"__type" : "MOD.WeaponConfigData,Assembly-CSharp",
+				"WeaponTypes" : [
+					2,5
+				],
+				"CheckSkill" : 102,
+				"UniteCheckSkill" : 0,
+				"DiceCheckType" : 1,
+				"ResultCheckType" : 1,
+				"DoubleWeapon" : false,
+				"TargetSelect" : 3,
+				"AttackType" : 2,
+				"DifferentRondom" : false,
+				"RandomCount" : 0,
+				"AttackCount" : 9,
+				"ContinuousAttackCount" : 1,
+				"Damage" : {
+					"DamageType" : 2,
+					"AttackType" : 3,
+					"AddAttrs" : [
+						
+					],
+					"Value" : "1d6+5",
+					"DB_Bonus" : 1,
+					"WithSuckBlood" : true,
+					"SuckBloodRatio" : 0.1,
+					"UseCommonEffect" : false,
+					"CommonEffectId" : 1,
+					"EffectShow" : {
+						"Duration" : 0.66,
+						"EffectShows" : [
+							{
+								"__type" : "MOD.PlayHitData,Assembly-CSharp",
+								"DelayTime" : 0
+							},{
+								"__type" : "MOD.PlayRoleEffectData,Assembly-CSharp",
+								"IsSelf" : false,
+								"UseFrameEffect" : false,
+								"FxPath" : "Effect\/FX\/StarColor\/FX_ColorOutofSpace_Attack2",
+								"FxPathReference" : {
+									"ReferenceType" : 0,
+									"Key" : null
+								},
+								"EffectName" : null,
+								"EffectAnimName" : null,
+								"Duration" : 0.66,
+								"PlayCenterPoint" : false,
+								"UseSameFx" : true,
+								"PointUseFrameEffect" : false,
+								"PlayCenterPointFxPath" : null,
+								"PointFxPathReference" : {
+									"ReferenceType" : 0,
+									"Key" : null
+								},
+								"PointEffectName" : null,
+								"PointEffectAnimName" : null,
+								"PointType" : 2,
+								"IsGroupCenter" : false,
+								"DelayTime" : 0
+							},{
+								"__type" : "MOD.PlaySoundData,Assembly-CSharp",
+								"AudioClip" : {
+									"AudioRes" : "Sound\/Audio\/FX\/Battle\/skill_05",
+									"AudioReference" : {
+										"ReferenceType" : 2,
+										"Key" : "skill_05"
+									},
+									"Volume" : 1,
+									"FadeTime" : 0
+								},
+								"IsLoop" : false,
+								"StopOnBattleFinish" : false,
+								"DelayTime" : 0
+							}
+						]
+					},
+					"IsDirectDeath" : false,
+					"IsNotBlock" : false
+				},
+				"NeedReloadEffect" : false,
+				"ReloadEffect" : 3,
+				"ShowConfirmEquipPopup" : false,
+				"ConfirmEquipDesc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : null,
+					"Characteristic" : null
+				},
+				"InfoDatas" : [
+					{
+						"DisableTrigger" : false,
+						"TriggerType" : 2,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_AddBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									-10008
+								],
+								"RandomAddBuff" : false,
+								"AddToHero" : false,
+								"AddToSource" : true,
+								"AddToAttackTarget" : false,
+								"SourceKey" : null
+							}
+						]
+					},{
+						"DisableTrigger" : false,
+						"TriggerType" : 7,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_RemoveBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									-10008
+								],
+								"RemoveHero" : false,
+								"RemoveSource" : true,
+								"SourceKey" : null
+							}
+						]
+					},{
+						"DisableTrigger" : false,
+						"TriggerType" : 8,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_ChargingOption,Assembly-CSharp",
+								"IsSelf" : true,
+								"ItemId" : 0,
+								"CalculateType" : 3,
+								"Value" : 1,
+								"EnableReplaceConfig" : true,
+								"SourceKey" : null
+							}
+						]
+					},{
+						"DisableTrigger" : false,
+						"TriggerType" : 28,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_ChargingOption,Assembly-CSharp",
+								"IsSelf" : true,
+								"ItemId" : 0,
+								"CalculateType" : 2,
+								"Value" : 1,
+								"EnableReplaceConfig" : false,
+								"SourceKey" : null
+							}
+						]
+					},{
+						"DisableTrigger" : false,
+						"TriggerType" : 23,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_ChargingOption,Assembly-CSharp",
+								"IsSelf" : true,
+								"ItemId" : 0,
+								"CalculateType" : 2,
+								"Value" : 1,
+								"EnableReplaceConfig" : false,
+								"SourceKey" : null
+							}
+						]
+					}
+				],
+				"EnableOverrideDesc" : true,
+				"OverrideDesc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : "受到了七曜的加护，可使用内部刻录的法术\n装备时习得法术【魔力屏障】【魔力冲击】【魔力激流】【魔力风暴】\n当受到伤害或目标死亡时，获得1点充能；当进行攻击时，消耗1点充能；当魔法值大于0时，每次攻击不再消耗充能而是改为消耗1点魔法值",
+					"Characteristic" : null
+				},
+				"Arrts" : [
+					
+				],
+				"Skills" : [
+					{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10003,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10004,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10005,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10006,
+						"IsRemove" : false
+					}
+				],
+				"Def" : {
+					"FxPath" : null,
+					"PointType" : 0,
+					"AudioClip" : {
+						"AudioRes" : null,
+						"AudioReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"Volume" : 1,
+						"FadeTime" : 1
+					},
+					"ArmorValue" : 0
+				}
+			},
+			"ThrowConfigData" : {
+				"CanThrowOnNoCharge" : false,
+				"PlayThrowAnim" : false,
+				"ThrowAnimtorName" : null,
+				"ThrowSpriteAnimName" : null,
+				"DiceCheckType" : 1,
+				"ResultCheckType" : 1,
+				"ExploreSkill" : 201,
+				"UseTag" : 1002,
+				"LimitType" : 1,
+				"TargetSelect" : 0,
+				"CanSelectDeathRole" : false,
+				"TargetFilter" : {
+					"RoleFilter" : [
+						
+					],
+					"EnableMaxMinFilter" : false,
+					"Attribute" : 0,
+					"Skill" : 0,
+					"ExtraAttr" : 0,
+					"MaxMinType" : 0,
+					"EnableDistanceFilter" : false,
+					"DistanceFilterType" : 0,
+					"EnableBuffLayerFilter" : false,
+					"BuffId" : 0,
+					"BuffLayerMaxMinType" : 0
+				},
+				"FxPath" : null,
+				"PointType" : 0,
+				"AudioClip" : {
+					"AudioRes" : null,
+					"AudioReference" : {
+						"ReferenceType" : 0,
+						"Key" : null
+					},
+					"Volume" : 1,
+					"FadeTime" : 1
+				},
+				"UsageCheck" : [
+					
+				],
+				"ConfigResultFuncs" : null,
+				"ResultFuncs" : {
+				},
+				"EnableOverrideDesc" : false,
+				"OverrideDesc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : null,
+					"Characteristic" : null
+				},
+				"IgnoreInfoDesc" : false
+			},
+			"GetItemOpts" : [
+				
+			],
+			"EndingOpts" : [
+				
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

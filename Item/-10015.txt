@@ -1,0 +1,1055 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.ItemData,Assembly-CSharp",
+			"IconPath" : "UI\/Textures\/Icon\/Item\/icon_item_xuesediaozhui",
+			"ItemId" : -10015,
+			"UniqueKey" : null,
+			"ItemName" : {
+				"TarKey" : "81c4a050e36a96d2c918d4e40caa24bf",
+				"SheetKey" : "",
+				"InputText" : "星曜",
+				"Characteristic" : null
+			},
+			"ItemDes" : {
+				"TarKey" : "bb9549a958d358db900f7207da9555bb",
+				"SheetKey" : "",
+				"InputText" : "炳如日星",
+				"Characteristic" : null
+			},
+			"ItemEffectDes" : {
+				"TarKey" : null,
+				"SheetKey" : "",
+				"InputText" : null,
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1004,
+				"Key" : "icon_item_xuesediaozhui"
+			},
+			"Price" : 0,
+			"ChargingCount" : 7,
+			"ReplaceChargingConfig" : [
+				
+			],
+			"AutoDestruct" : false,
+			"Disassemble" : {
+				"Items" : {
+					"Type" : 7,
+					"Ids" : [
+						-10005,-10006,-10007,-10008,-10009,-10010,-10011
+					]
+				},
+				"PartsCount" : 25
+			},
+			"IsCantDisboard" : false,
+			"DesignTag" : 2,
+			"TagList" : [
+				
+			],
+			"ItemAttrValue" : [
+				6,5
+			],
+			"MythicalId" : 0,
+			"ItemType" : 3,
+			"ItemStaticAffixList" : [
+				
+			],
+			"ItemDynamicAffixList" : [
+				
+			],
+			"IsBindCharacter" : false,
+			"BuffsLink" : [
+				-10009,-10075,-10002,-10003,-10004,-10006,-10018,126
+			],
+			"Terms" : [
+				33
+			],
+			"ConfigData" : [
+				{
+					"ExploreSkill" : 101,
+					"UseTag" : 0,
+					"LimitType" : 3,
+					"TargetSelect" : 7,
+					"CanSelectDeathRole" : false,
+					"TargetFilter" : {
+						"RoleFilter" : [
+							{
+								"FilterType" : 2,
+								"RoleSide" : 0,
+								"RoleTypes" : [
+									
+								],
+								"BuffId" : -10002,
+								"BuffType" : 0,
+								"CompareType" : 0,
+								"CompareValue" : 0,
+								"TraitId" : 0,
+								"RoleId" : 0,
+								"TraitType" : 0,
+								"LifeState" : 0,
+								"RoleTag" : 0,
+								"CanRemoveBuffs" : [
+									
+								],
+								"Attribute" : 0,
+								"Skill" : 0,
+								"ExtraAttr" : 0,
+								"ValueCompareType" : 0,
+								"ValueCompareValue" : 0,
+								"CompareWithMaxValue" : false,
+								"MaxValueRatio" : 1,
+								"CompareWithSelf" : false,
+								"CompareAttribute" : 0,
+								"CompareSkill" : 0,
+								"CompareExtraAttr" : 0,
+								"EquipItemId" : 0,
+								"Not" : true
+							}
+						],
+						"EnableMaxMinFilter" : false,
+						"Attribute" : 0,
+						"Skill" : 0,
+						"ExtraAttr" : 0,
+						"MaxMinType" : 0,
+						"EnableDistanceFilter" : false,
+						"DistanceFilterType" : 0,
+						"EnableBuffLayerFilter" : false,
+						"BuffId" : 0,
+						"BuffLayerMaxMinType" : 0
+					},
+					"FxPath" : null,
+					"PointType" : 0,
+					"AudioClip" : {
+						"AudioRes" : null,
+						"AudioReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"Volume" : 1,
+						"FadeTime" : 1
+					},
+					"UsageCheck" : [
+						{
+							"__type" : "ItemEvent.ItemCharingCheck,Assembly-CSharp",
+							"CharingCount" : 0,
+							"CompareType" : 3
+						}
+					],
+					"ConfigResultFuncs" : {
+						"IgnoreGreatResult" : false,
+						"GreatSuccessOpts" : [
+							
+						],
+						"SuccessOpts" : [
+							{
+								"__type" : "MOD.Item_ChargingOption,Assembly-CSharp",
+								"IsSelf" : true,
+								"ItemId" : 0,
+								"CalculateType" : 3,
+								"Value" : 1,
+								"EnableReplaceConfig" : false,
+								"SourceKey" : null
+							},{
+								"__type" : "MOD.Item_PlayEffectShowOption,Assembly-CSharp",
+								"UseCommonEffect" : true,
+								"CommonEffectId" : 15,
+								"EffectShow" : {
+									"Duration" : 0,
+									"EffectShows" : [
+										
+									]
+								},
+								"UnblockThread" : true,
+								"SourceKey" : null
+							},{
+								"__type" : "MOD.Item_AddBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									-10002
+								],
+								"RandomAddBuff" : false,
+								"AddToHero" : false,
+								"AddToSource" : false,
+								"AddToAttackTarget" : false,
+								"SourceKey" : null
+							}
+						],
+						"FailOpts" : [
+							
+						],
+						"GreatFailOpts" : [
+							
+						]
+					},
+					"ResultFuncs" : {
+					},
+					"EnableOverrideDesc" : false,
+					"OverrideDesc" : {
+						"TarKey" : "",
+						"SheetKey" : "",
+						"InputText" : null,
+						"Characteristic" : null
+					},
+					"IgnoreInfoDesc" : true
+				},{
+					"ExploreSkill" : 102,
+					"UseTag" : 0,
+					"LimitType" : 3,
+					"TargetSelect" : 7,
+					"CanSelectDeathRole" : false,
+					"TargetFilter" : {
+						"RoleFilter" : [
+							{
+								"FilterType" : 2,
+								"RoleSide" : 0,
+								"RoleTypes" : [
+									
+								],
+								"BuffId" : -10003,
+								"BuffType" : 0,
+								"CompareType" : 0,
+								"CompareValue" : 0,
+								"TraitId" : 0,
+								"RoleId" : 0,
+								"TraitType" : 0,
+								"LifeState" : 0,
+								"RoleTag" : 0,
+								"CanRemoveBuffs" : [
+									
+								],
+								"Attribute" : 0,
+								"Skill" : 0,
+								"ExtraAttr" : 0,
+								"ValueCompareType" : 0,
+								"ValueCompareValue" : 0,
+								"CompareWithMaxValue" : false,
+								"MaxValueRatio" : 1,
+								"CompareWithSelf" : false,
+								"CompareAttribute" : 0,
+								"CompareSkill" : 0,
+								"CompareExtraAttr" : 0,
+								"EquipItemId" : 0,
+								"Not" : true
+							}
+						],
+						"EnableMaxMinFilter" : false,
+						"Attribute" : 0,
+						"Skill" : 0,
+						"ExtraAttr" : 0,
+						"MaxMinType" : 0,
+						"EnableDistanceFilter" : false,
+						"DistanceFilterType" : 0,
+						"EnableBuffLayerFilter" : false,
+						"BuffId" : 0,
+						"BuffLayerMaxMinType" : 0
+					},
+					"FxPath" : null,
+					"PointType" : 0,
+					"AudioClip" : {
+						"AudioRes" : null,
+						"AudioReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"Volume" : 1,
+						"FadeTime" : 1
+					},
+					"UsageCheck" : [
+						{
+							"__type" : "ItemEvent.ItemCharingCheck,Assembly-CSharp",
+							"CharingCount" : 0,
+							"CompareType" : 3
+						}
+					],
+					"ConfigResultFuncs" : {
+						"IgnoreGreatResult" : false,
+						"GreatSuccessOpts" : [
+							
+						],
+						"SuccessOpts" : [
+							{
+								"__type" : "MOD.Item_ChargingOption,Assembly-CSharp",
+								"IsSelf" : true,
+								"ItemId" : 0,
+								"CalculateType" : 3,
+								"Value" : 1,
+								"EnableReplaceConfig" : false,
+								"SourceKey" : null
+							},{
+								"__type" : "MOD.Item_PlayEffectShowOption,Assembly-CSharp",
+								"UseCommonEffect" : true,
+								"CommonEffectId" : 15,
+								"EffectShow" : {
+									"Duration" : 0,
+									"EffectShows" : [
+										
+									]
+								},
+								"UnblockThread" : true,
+								"SourceKey" : null
+							},{
+								"__type" : "MOD.Item_AddBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									-10003
+								],
+								"RandomAddBuff" : false,
+								"AddToHero" : false,
+								"AddToSource" : false,
+								"AddToAttackTarget" : false,
+								"SourceKey" : null
+							}
+						],
+						"FailOpts" : [
+							
+						],
+						"GreatFailOpts" : [
+							
+						]
+					},
+					"ResultFuncs" : {
+					},
+					"EnableOverrideDesc" : false,
+					"OverrideDesc" : {
+						"TarKey" : "",
+						"SheetKey" : "",
+						"InputText" : null,
+						"Characteristic" : null
+					},
+					"IgnoreInfoDesc" : true
+				},{
+					"ExploreSkill" : 201,
+					"UseTag" : 0,
+					"LimitType" : 3,
+					"TargetSelect" : 7,
+					"CanSelectDeathRole" : false,
+					"TargetFilter" : {
+						"RoleFilter" : [
+							{
+								"FilterType" : 2,
+								"RoleSide" : 0,
+								"RoleTypes" : [
+									
+								],
+								"BuffId" : -10004,
+								"BuffType" : 0,
+								"CompareType" : 0,
+								"CompareValue" : 0,
+								"TraitId" : 0,
+								"RoleId" : 0,
+								"TraitType" : 0,
+								"LifeState" : 0,
+								"RoleTag" : 0,
+								"CanRemoveBuffs" : [
+									
+								],
+								"Attribute" : 0,
+								"Skill" : 0,
+								"ExtraAttr" : 0,
+								"ValueCompareType" : 0,
+								"ValueCompareValue" : 0,
+								"CompareWithMaxValue" : false,
+								"MaxValueRatio" : 1,
+								"CompareWithSelf" : false,
+								"CompareAttribute" : 0,
+								"CompareSkill" : 0,
+								"CompareExtraAttr" : 0,
+								"EquipItemId" : 0,
+								"Not" : true
+							}
+						],
+						"EnableMaxMinFilter" : false,
+						"Attribute" : 0,
+						"Skill" : 0,
+						"ExtraAttr" : 0,
+						"MaxMinType" : 0,
+						"EnableDistanceFilter" : false,
+						"DistanceFilterType" : 0,
+						"EnableBuffLayerFilter" : false,
+						"BuffId" : 0,
+						"BuffLayerMaxMinType" : 0
+					},
+					"FxPath" : null,
+					"PointType" : 0,
+					"AudioClip" : {
+						"AudioRes" : null,
+						"AudioReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"Volume" : 1,
+						"FadeTime" : 1
+					},
+					"UsageCheck" : [
+						{
+							"__type" : "ItemEvent.ItemCharingCheck,Assembly-CSharp",
+							"CharingCount" : 0,
+							"CompareType" : 3
+						}
+					],
+					"ConfigResultFuncs" : {
+						"IgnoreGreatResult" : false,
+						"GreatSuccessOpts" : [
+							
+						],
+						"SuccessOpts" : [
+							{
+								"__type" : "MOD.Item_ChargingOption,Assembly-CSharp",
+								"IsSelf" : true,
+								"ItemId" : 0,
+								"CalculateType" : 3,
+								"Value" : 1,
+								"EnableReplaceConfig" : false,
+								"SourceKey" : null
+							},{
+								"__type" : "MOD.Item_PlayEffectShowOption,Assembly-CSharp",
+								"UseCommonEffect" : true,
+								"CommonEffectId" : 15,
+								"EffectShow" : {
+									"Duration" : 0,
+									"EffectShows" : [
+										
+									]
+								},
+								"UnblockThread" : true,
+								"SourceKey" : null
+							},{
+								"__type" : "MOD.Item_AddBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									-10004
+								],
+								"RandomAddBuff" : false,
+								"AddToHero" : false,
+								"AddToSource" : false,
+								"AddToAttackTarget" : false,
+								"SourceKey" : null
+							}
+						],
+						"FailOpts" : [
+							
+						],
+						"GreatFailOpts" : [
+							
+						]
+					},
+					"ResultFuncs" : {
+					},
+					"EnableOverrideDesc" : false,
+					"OverrideDesc" : {
+						"TarKey" : "",
+						"SheetKey" : "",
+						"InputText" : null,
+						"Characteristic" : null
+					},
+					"IgnoreInfoDesc" : true
+				},{
+					"ExploreSkill" : 502,
+					"UseTag" : 0,
+					"LimitType" : 3,
+					"TargetSelect" : 7,
+					"CanSelectDeathRole" : false,
+					"TargetFilter" : {
+						"RoleFilter" : [
+							{
+								"FilterType" : 2,
+								"RoleSide" : 0,
+								"RoleTypes" : [
+									
+								],
+								"BuffId" : -10006,
+								"BuffType" : 0,
+								"CompareType" : 0,
+								"CompareValue" : 0,
+								"TraitId" : 0,
+								"RoleId" : 0,
+								"TraitType" : 0,
+								"LifeState" : 0,
+								"RoleTag" : 0,
+								"CanRemoveBuffs" : [
+									
+								],
+								"Attribute" : 0,
+								"Skill" : 0,
+								"ExtraAttr" : 0,
+								"ValueCompareType" : 0,
+								"ValueCompareValue" : 0,
+								"CompareWithMaxValue" : false,
+								"MaxValueRatio" : 1,
+								"CompareWithSelf" : false,
+								"CompareAttribute" : 0,
+								"CompareSkill" : 0,
+								"CompareExtraAttr" : 0,
+								"EquipItemId" : 0,
+								"Not" : true
+							}
+						],
+						"EnableMaxMinFilter" : false,
+						"Attribute" : 0,
+						"Skill" : 0,
+						"ExtraAttr" : 0,
+						"MaxMinType" : 0,
+						"EnableDistanceFilter" : false,
+						"DistanceFilterType" : 0,
+						"EnableBuffLayerFilter" : false,
+						"BuffId" : 0,
+						"BuffLayerMaxMinType" : 0
+					},
+					"FxPath" : null,
+					"PointType" : 0,
+					"AudioClip" : {
+						"AudioRes" : null,
+						"AudioReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"Volume" : 1,
+						"FadeTime" : 1
+					},
+					"UsageCheck" : [
+						{
+							"__type" : "ItemEvent.ItemCharingCheck,Assembly-CSharp",
+							"CharingCount" : 0,
+							"CompareType" : 3
+						}
+					],
+					"ConfigResultFuncs" : {
+						"IgnoreGreatResult" : false,
+						"GreatSuccessOpts" : [
+							
+						],
+						"SuccessOpts" : [
+							{
+								"__type" : "MOD.Item_ChargingOption,Assembly-CSharp",
+								"IsSelf" : true,
+								"ItemId" : 0,
+								"CalculateType" : 3,
+								"Value" : 1,
+								"EnableReplaceConfig" : false,
+								"SourceKey" : null
+							},{
+								"__type" : "MOD.Item_PlayEffectShowOption,Assembly-CSharp",
+								"UseCommonEffect" : true,
+								"CommonEffectId" : 15,
+								"EffectShow" : {
+									"Duration" : 0,
+									"EffectShows" : [
+										
+									]
+								},
+								"UnblockThread" : true,
+								"SourceKey" : null
+							},{
+								"__type" : "MOD.Item_AddBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									-10006
+								],
+								"RandomAddBuff" : false,
+								"AddToHero" : false,
+								"AddToSource" : false,
+								"AddToAttackTarget" : false,
+								"SourceKey" : null
+							}
+						],
+						"FailOpts" : [
+							
+						],
+						"GreatFailOpts" : [
+							
+						]
+					},
+					"ResultFuncs" : {
+					},
+					"EnableOverrideDesc" : false,
+					"OverrideDesc" : {
+						"TarKey" : "",
+						"SheetKey" : "",
+						"InputText" : null,
+						"Characteristic" : null
+					},
+					"IgnoreInfoDesc" : true
+				}
+			],
+			"EquipmentConfigData" : {
+				"__type" : "MOD.EquipConfigData,Assembly-CSharp",
+				"EquipType" : 0,
+				"ShowConfirmEquipPopup" : false,
+				"ConfirmEquipDesc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : null,
+					"Characteristic" : null
+				},
+				"InfoDatas" : [
+					{
+						"DisableTrigger" : false,
+						"TriggerType" : 2,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_AddBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									-10009,-10014
+								],
+								"RandomAddBuff" : false,
+								"AddToHero" : false,
+								"AddToSource" : true,
+								"AddToAttackTarget" : false,
+								"SourceKey" : null
+							}
+						]
+					},{
+						"DisableTrigger" : false,
+						"TriggerType" : 7,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_RemoveBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									-10009,-10014
+								],
+								"RemoveHero" : false,
+								"RemoveSource" : true,
+								"SourceKey" : null
+							}
+						]
+					},{
+						"DisableTrigger" : false,
+						"TriggerType" : 28,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_ChargingOption,Assembly-CSharp",
+								"IsSelf" : true,
+								"ItemId" : 0,
+								"CalculateType" : 2,
+								"Value" : 1,
+								"EnableReplaceConfig" : false,
+								"SourceKey" : null
+							}
+						]
+					},{
+						"DisableTrigger" : false,
+						"TriggerType" : 23,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_ChargingOption,Assembly-CSharp",
+								"IsSelf" : true,
+								"ItemId" : 0,
+								"CalculateType" : 2,
+								"Value" : 1,
+								"EnableReplaceConfig" : false,
+								"SourceKey" : null
+							}
+						]
+					}
+				],
+				"EnableOverrideDesc" : true,
+				"OverrideDesc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : "魔力上限+20，魔力恢复+40\r\n你每有一项本职技能达到90，便使你角色全属性+10；技能检定获得1个奖励骰\r\n当受到伤害或目标死亡时，获得1点充能\r\n\r\n使用：\r\n此行动消耗1点充能，可在探索中使用\r\n[斗殴]：我方单体赋予【赤曜：扩容】\r\n[射击]：我方单体赋予【枳曜：渗透】\r\n[运动]：我方单体赋予【金曜：共鸣】\r\n[神秘]：我方单体赋予【苍曜：熵减】",
+					"Characteristic" : null
+				},
+				"Arrts" : [
+					{
+						"IsTrackSource" : true,
+						"RoleAttr" : {
+							"Type" : 0,
+							"Value" : null,
+							"IsRatio" : false,
+							"Ratio" : 0
+						},
+						"RoleExAttr" : {
+							"Type" : 114,
+							"Value" : "40",
+							"IsRatio" : false,
+							"Ratio" : 0
+						},
+						"RoleSkill" : {
+							"Type" : 0,
+							"Value" : null,
+							"IsRatio" : false,
+							"Ratio" : 0
+						},
+						"RoleSystemAttr" : {
+							"Type" : 0,
+							"Value" : null,
+							"IsRatio" : false,
+							"Ratio" : 0
+						},
+						"ExDiceData" : {
+							"ExploreSkill" : {
+								"Type" : 0,
+								"ChangeAll" : true,
+								"IsTemp" : false,
+								"Value" : 1
+							},
+							"HeroAttribute" : {
+								"Type" : 0,
+								"ChangeAll" : false,
+								"IsTemp" : false,
+								"Value" : 0
+							},
+							"ExtraAttribute" : {
+								"Type" : 0,
+								"ChangeAll" : false,
+								"IsTemp" : false,
+								"Value" : 0
+							}
+						}
+					}
+				],
+				"Skills" : [
+					{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10003,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10004,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10005,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10006,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 1,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 14,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 16,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 2,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 5,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 23,
+						"IsRemove" : false
+					}
+				],
+				"Def" : {
+					"FxPath" : null,
+					"PointType" : 0,
+					"AudioClip" : {
+						"AudioRes" : null,
+						"AudioReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"Volume" : 1,
+						"FadeTime" : 1
+					},
+					"ArmorValue" : 0
+				}
+			},
+			"ThrowConfigData" : {
+				"CanThrowOnNoCharge" : true,
+				"PlayThrowAnim" : false,
+				"ThrowAnimtorName" : null,
+				"ThrowSpriteAnimName" : "",
+				"DiceCheckType" : 1,
+				"ResultCheckType" : 1,
+				"ExploreSkill" : 0,
+				"UseTag" : 1002,
+				"LimitType" : 1,
+				"TargetSelect" : 3,
+				"CanSelectDeathRole" : false,
+				"TargetFilter" : {
+					"RoleFilter" : [
+						
+					],
+					"EnableMaxMinFilter" : false,
+					"Attribute" : 0,
+					"Skill" : 0,
+					"ExtraAttr" : 0,
+					"MaxMinType" : 0,
+					"EnableDistanceFilter" : false,
+					"DistanceFilterType" : 0,
+					"EnableBuffLayerFilter" : false,
+					"BuffId" : 0,
+					"BuffLayerMaxMinType" : 0
+				},
+				"FxPath" : null,
+				"PointType" : 0,
+				"AudioClip" : {
+					"AudioRes" : null,
+					"AudioReference" : {
+						"ReferenceType" : 0,
+						"Key" : null
+					},
+					"Volume" : 1,
+					"FadeTime" : 1
+				},
+				"UsageCheck" : [
+					
+				],
+				"ConfigResultFuncs" : {
+					"IgnoreGreatResult" : false,
+					"GreatSuccessOpts" : [
+						
+					],
+					"SuccessOpts" : [
+						{
+							"__type" : "MOD.Item_AddBuffOption,Assembly-CSharp",
+							"BuffList" : [
+								126,-10018
+							],
+							"RandomAddBuff" : false,
+							"AddToHero" : false,
+							"AddToSource" : false,
+							"AddToAttackTarget" : false,
+							"SourceKey" : null
+						},{
+							"__type" : "MOD.Item_DamageOption,Assembly-CSharp",
+							"Damage" : {
+								"DamageType" : 2,
+								"AttackType" : 3,
+								"AddAttrs" : [
+									
+								],
+								"Value" : "5D6+20",
+								"DB_Bonus" : 1,
+								"WithSuckBlood" : true,
+								"SuckBloodRatio" : 0.1,
+								"UseCommonEffect" : false,
+								"CommonEffectId" : 1,
+								"EffectShow" : {
+									"Duration" : 2.5,
+									"EffectShows" : [
+										{
+											"__type" : "MOD.PlayRoleAnimationData,Assembly-CSharp",
+											"IsSelf" : true,
+											"AnimtorName" : null,
+											"SpriteAnimName" : "attack",
+											"BackToDefault" : true,
+											"SpriteAnimFirst" : false,
+											"StartTime" : 0,
+											"DelayTime" : 0
+										},{
+											"__type" : "MOD.PlayRoleEffectData,Assembly-CSharp",
+											"IsSelf" : false,
+											"UseFrameEffect" : false,
+											"FxPath" : "Effect\/FX\/Avgormon\/FX_Avgormon_FlameArrow",
+											"FxPathReference" : {
+												"ReferenceType" : 0,
+												"Key" : null
+											},
+											"EffectName" : null,
+											"EffectAnimName" : null,
+											"Duration" : 2.5,
+											"PlayCenterPoint" : false,
+											"UseSameFx" : true,
+											"PointUseFrameEffect" : false,
+											"PlayCenterPointFxPath" : null,
+											"PointFxPathReference" : {
+												"ReferenceType" : 0,
+												"Key" : null
+											},
+											"PointEffectName" : null,
+											"PointEffectAnimName" : null,
+											"PointType" : 3,
+											"IsGroupCenter" : false,
+											"DelayTime" : 0
+										},{
+											"__type" : "MOD.PlaySoundData,Assembly-CSharp",
+											"AudioClip" : {
+												"AudioRes" : "Sound\/Audio\/FX\/Attack\/SHOCK_RIFLE_Clap_Thunder_Tail_01_mono",
+												"AudioReference" : {
+													"ReferenceType" : 2,
+													"Key" : "SHOCK_RIFLE_Clap_Thunder_Tail_01_mono"
+												},
+												"Volume" : 1,
+												"FadeTime" : 1
+											},
+											"IsLoop" : false,
+											"StopOnBattleFinish" : false,
+											"DelayTime" : 1
+										},{
+											"__type" : "MOD.PlayHitData,Assembly-CSharp",
+											"DelayTime" : 1.5
+										}
+									]
+								},
+								"IsDirectDeath" : false,
+								"IsNotBlock" : false
+							},
+							"DamageRatio" : 1,
+							"OverrideTarget" : false,
+							"TargetType" : 0,
+							"SourceKey" : null
+						}
+					],
+					"FailOpts" : [
+						
+					],
+					"GreatFailOpts" : [
+						
+					]
+				},
+				"ResultFuncs" : {2:[
+						{
+							"__type" : "MOD.Item_AddBuffOption,Assembly-CSharp",
+							"BuffList" : [
+								126,-10018
+							],
+							"RandomAddBuff" : false,
+							"AddToHero" : false,
+							"AddToSource" : false,
+							"AddToAttackTarget" : false,
+							"SourceKey" : null
+						},{
+							"__type" : "MOD.Item_DamageOption,Assembly-CSharp",
+							"Damage" : {
+								"DamageType" : 2,
+								"AttackType" : 3,
+								"AddAttrs" : [
+									
+								],
+								"Value" : "5D6+20",
+								"DB_Bonus" : 1,
+								"WithSuckBlood" : true,
+								"SuckBloodRatio" : 0.1,
+								"UseCommonEffect" : false,
+								"CommonEffectId" : 1,
+								"EffectShow" : {
+									"Duration" : 2.5,
+									"EffectShows" : [
+										{
+											"__type" : "MOD.PlayRoleAnimationData,Assembly-CSharp",
+											"IsSelf" : true,
+											"AnimtorName" : null,
+											"SpriteAnimName" : "attack",
+											"BackToDefault" : true,
+											"SpriteAnimFirst" : false,
+											"StartTime" : 0,
+											"DelayTime" : 0
+										},{
+											"__type" : "MOD.PlayRoleEffectData,Assembly-CSharp",
+											"IsSelf" : false,
+											"UseFrameEffect" : false,
+											"FxPath" : "Effect\/FX\/Avgormon\/FX_Avgormon_FlameArrow",
+											"FxPathReference" : {
+												"ReferenceType" : 0,
+												"Key" : null
+											},
+											"EffectName" : null,
+											"EffectAnimName" : null,
+											"Duration" : 2.5,
+											"PlayCenterPoint" : false,
+											"UseSameFx" : true,
+											"PointUseFrameEffect" : false,
+											"PlayCenterPointFxPath" : null,
+											"PointFxPathReference" : {
+												"ReferenceType" : 0,
+												"Key" : null
+											},
+											"PointEffectName" : null,
+											"PointEffectAnimName" : null,
+											"PointType" : 3,
+											"IsGroupCenter" : false,
+											"DelayTime" : 0
+										},{
+											"__type" : "MOD.PlaySoundData,Assembly-CSharp",
+											"AudioClip" : {
+												"AudioRes" : "Sound\/Audio\/FX\/Attack\/SHOCK_RIFLE_Clap_Thunder_Tail_01_mono",
+												"AudioReference" : {
+													"ReferenceType" : 2,
+													"Key" : "SHOCK_RIFLE_Clap_Thunder_Tail_01_mono"
+												},
+												"Volume" : 1,
+												"FadeTime" : 1
+											},
+											"IsLoop" : false,
+											"StopOnBattleFinish" : false,
+											"DelayTime" : 1
+										},{
+											"__type" : "MOD.PlayHitData,Assembly-CSharp",
+											"DelayTime" : 1.5
+										}
+									]
+								},
+								"IsDirectDeath" : false,
+								"IsNotBlock" : false
+							},
+							"DamageRatio" : 1,
+							"OverrideTarget" : false,
+							"TargetType" : 0,
+							"SourceKey" : null
+						}
+					],4:[
+						
+					]
+				},
+				"EnableOverrideDesc" : true,
+				"OverrideDesc" : {
+					"TarKey" : "c341f50d079c1a32d77ee9abe01d5cff",
+					"SheetKey" : "",
+					"InputText" : "[25-50]+伤害加成(法术伤害)并施加【易伤】【实界驱离】\n此行动不消耗充能，可重复投掷",
+					"Characteristic" : null
+				},
+				"IgnoreInfoDesc" : false
+			},
+			"GetItemOpts" : [
+				
+			],
+			"EndingOpts" : [
+				
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

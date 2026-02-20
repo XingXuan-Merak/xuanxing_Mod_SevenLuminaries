@@ -1,0 +1,156 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.BuffTableData,Assembly-CSharp",
+			"IconPath" : "UI\/Textures\/Icon\/Buff\/icon_buff_zhenyanshu",
+			"Id" : -10010,
+			"Name" : {
+				"TarKey" : "5eaf08a86a91a7133eec0658f0672942",
+				"SheetKey" : "",
+				"InputText" : "得心应手",
+				"Characteristic" : null
+			},
+			"Des" : {
+				"TarKey" : "1f98147493d047d5241b316c98dfd422",
+				"SheetKey" : "",
+				"InputText" : "下一次斗殴必定大成功",
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1007,
+				"Key" : "icon_buff_guanghuigongming"
+			},
+			"Comment" : "七曜",
+			"BuffType" : 1,
+			"BuffEffectType" : 1,
+			"OverlayType" : 1,
+			"LayerCount" : {
+				"Value" : "3"
+			},
+			"OverrideInitLayer" : false,
+			"InitLayer" : 0,
+			"MaxLayer" : 0,
+			"FxPlayType" : 1,
+			"UseFxPrefab" : {
+				"FxPath" : "Effect\/Prefabs\/Buff\/FX_Buff_130",
+				"UseFrameEffect" : false,
+				"FxRes" : {
+					"ReferenceType" : 10001,
+					"Key" : null
+				},
+				"EffectName" : null,
+				"EffectAnimName" : null,
+				"PlayPoint" : 3
+			},
+			"PlayFxInBattle" : false,
+			"PlayFxInExplore" : false,
+			"DelayTime" : 0,
+			"EffectClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"EndClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"IsClipLoop" : false,
+			"Duration" : 0,
+			"Priority" : 0,
+			"IsDeathClear" : false,
+			"IsShowUI" : true,
+			"Arrts" : [
+				
+			],
+			"Events" : [
+				{
+					"EBuffTrigger" : 1,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_FixedDiceResult,Assembly-CSharp",
+							"ChangeType" : 1,
+							"Elements" : [
+								{
+									"IsAll" : false,
+									"Attribute" : 0,
+									"Skill" : 101,
+									"ExtraAttr" : 0,
+									"IncludeCustomSkill" : false,
+									"FixedResult" : 1,
+									"IncludeCompare" : true
+								}
+							],
+							"SourceKey" : "-691024134Buff_FixedDiceResult"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 18,
+					"DiceCheckElements" : [
+						{
+							"Attr" : 0,
+							"IncludeAllAttr" : false,
+							"CheckSkill" : 101,
+							"IncludeAllSkill" : false,
+							"ExtraAttr" : 0,
+							"IncludeAllExtraAttr" : false,
+							"IncludeCustomSkill" : false,
+							"CheckResult" : 1
+						}
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_BuffLayerOption,Assembly-CSharp",
+							"IsSelf" : true,
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"BuffId" : 0,
+							"LayerCount" : {
+								"Value" : "-1"
+							},
+							"ChangeToSpecLayer" : false,
+							"SpecLayer" : 0,
+							"IgnoreLayerChangeOnFirstRound" : false,
+							"SourceKey" : "-489255848Buff_BuffLayerOption"
+						}
+					],
+					"CanBeDisabled" : false
+				}
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

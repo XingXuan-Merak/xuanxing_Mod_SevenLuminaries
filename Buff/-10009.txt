@@ -1,0 +1,597 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.BuffTableData,Assembly-CSharp",
+			"IconPath" : null,
+			"Id" : -10009,
+			"Name" : {
+				"TarKey" : "29d35fd148dde675a7d32df3f665c33f",
+				"SheetKey" : "",
+				"InputText" : "曜",
+				"Characteristic" : null
+			},
+			"Des" : {
+				"TarKey" : "",
+				"SheetKey" : "",
+				"InputText" : "化零为整，七色流转。具有全部七色的效果\n战斗开始、回合开始、攻击命中时施加【晦】",
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1007,
+				"Key" : "icon_buff_kuangbaotizhi"
+			},
+			"Comment" : "七曜",
+			"BuffType" : 1,
+			"BuffEffectType" : 1,
+			"OverlayType" : 2,
+			"LayerCount" : {
+				"Value" : null
+			},
+			"OverrideInitLayer" : false,
+			"InitLayer" : 0,
+			"MaxLayer" : 0,
+			"FxPlayType" : 1,
+			"UseFxPrefab" : {
+				"FxPath" : null,
+				"UseFrameEffect" : false,
+				"FxRes" : {
+					"ReferenceType" : 10001,
+					"Key" : null
+				},
+				"EffectName" : null,
+				"EffectAnimName" : null,
+				"PlayPoint" : 0
+			},
+			"PlayFxInBattle" : false,
+			"PlayFxInExplore" : false,
+			"DelayTime" : 0,
+			"EffectClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"EndClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"IsClipLoop" : false,
+			"Duration" : 0,
+			"Priority" : 0,
+			"IsDeathClear" : false,
+			"IsShowUI" : true,
+			"Arrts" : [
+				{
+					"IsTrackSource" : true,
+					"RoleAttr" : {
+						"Type" : 0,
+						"Value" : null,
+						"IsRatio" : false,
+						"Ratio" : 0
+					},
+					"RoleExAttr" : {
+						"Type" : 114,
+						"Value" : "10",
+						"IsRatio" : false,
+						"Ratio" : 0
+					},
+					"RoleSkill" : {
+						"Type" : 0,
+						"Value" : null,
+						"IsRatio" : false,
+						"Ratio" : 0
+					},
+					"RoleSystemAttr" : {
+						"Type" : 0,
+						"Value" : null,
+						"IsRatio" : false,
+						"Ratio" : 0
+					},
+					"ExDiceData" : {
+						"ExploreSkill" : {
+							"Type" : 0,
+							"ChangeAll" : false,
+							"IsTemp" : false,
+							"Value" : 0
+						},
+						"HeroAttribute" : {
+							"Type" : 0,
+							"ChangeAll" : false,
+							"IsTemp" : false,
+							"Value" : 0
+						},
+						"ExtraAttribute" : {
+							"Type" : 0,
+							"ChangeAll" : false,
+							"IsTemp" : false,
+							"Value" : 0
+						}
+					}
+				}
+			],
+			"Events" : [
+				{
+					"EBuffTrigger" : 1,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_AddAttrMaxValueOption,Assembly-CSharp",
+							"Attribute" : 0,
+							"Skill" : 0,
+							"ExtraAttr" : 103,
+							"IsBuffType" : false,
+							"BuffEffectType" : 0,
+							"MaxCount" : 0,
+							"ChangeByRatio" : false,
+							"ChangeRatio" : 1,
+							"AddValue" : "10",
+							"IsRemove" : false,
+							"SourceKey" : "-830999304Buff_AddAttrMaxValueOption"
+						},{
+							"__type" : "MOD.Buff_ImmuneDamageOption,Assembly-CSharp",
+							"Data" : {
+								"IsOpen" : true,
+								"ImmuMaxDamage" : false,
+								"ImmuFall" : false,
+								"IsRangeLimit" : false,
+								"MaxRangeValue" : 0,
+								"RangeResult" : 0,
+								"OnlyImmuEnemyDamage" : false,
+								"DamageTypeList" : [
+									
+								],
+								"ReductionList" : [
+									{
+										"AddEffectType" : 0,
+										"Type" : 2,
+										"ReduceValue" : 5
+									}
+								],
+								"RoleReductionList" : [
+									
+								]
+							},
+							"SourceKey" : "813807948Buff_ImmuneDamageOption"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 2,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						{
+							"__type" : "MOD.Buff_CheckBattleActionOption,Assembly-CSharp",
+							"CheckLastUseRecord" : false,
+							"CheckId" : false,
+							"CheckMonsterSkill" : false,
+							"CheckMagicSkill" : false,
+							"SkillId" : 0,
+							"IsBattleSkill" : false,
+							"IsMagicSkill" : true,
+							"IsAttackSkill" : false,
+							"CheckBattleSkillType" : false,
+							"BattleSkillType" : 0,
+							"CheckBattleSkillTargetType" : false,
+							"TargetSelectList" : [
+								
+							]
+						}
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsBuffLayer" : false,
+							"IsBuffType" : false,
+							"BuffEffectType" : 0,
+							"MaxCount" : 0,
+							"ChangeByBuffLayerChange" : false,
+							"ChangeByMaxGoodAtSkillCount" : false,
+							"ChangeToMax" : false,
+							"MaxRatio" : 1,
+							"Datas" : [
+								{
+									"IsTrackSource" : false,
+									"RoleAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleExAttr" : {
+										"Type" : 119,
+										"Value" : "200",
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSkill" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSystemAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"ExDiceData" : {
+										"ExploreSkill" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"HeroAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"ExtraAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										}
+									}
+								}
+							],
+							"CannnotRecoverOnRemove" : false,
+							"IsRemove" : false,
+							"SourceKey" : "-1605553138Buff_RoleAttrOption"
+						},{
+							"__type" : "MOD.Buff_IgnoreMagicSanCostOption,Assembly-CSharp",
+							"IsIgnore" : true,
+							"SourceKey" : "1784549276Buff_IgnoreMagicSanCostOption"
+						},{
+							"__type" : "MOD.Buff_MagicMaxDamageOption,Assembly-CSharp",
+							"IsMax" : true,
+							"SourceKey" : "235441608Buff_MagicMaxDamageOption"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 5,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						{
+							"__type" : "MOD.Buff_CheckBattleActionOption,Assembly-CSharp",
+							"CheckLastUseRecord" : false,
+							"CheckId" : false,
+							"CheckMonsterSkill" : false,
+							"CheckMagicSkill" : false,
+							"SkillId" : 0,
+							"IsBattleSkill" : false,
+							"IsMagicSkill" : true,
+							"IsAttackSkill" : false,
+							"CheckBattleSkillType" : false,
+							"BattleSkillType" : 0,
+							"CheckBattleSkillTargetType" : false,
+							"TargetSelectList" : [
+								
+							]
+						}
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsBuffLayer" : false,
+							"IsBuffType" : false,
+							"BuffEffectType" : 0,
+							"MaxCount" : 0,
+							"ChangeByBuffLayerChange" : false,
+							"ChangeByMaxGoodAtSkillCount" : false,
+							"ChangeToMax" : false,
+							"MaxRatio" : 1,
+							"Datas" : [
+								{
+									"IsTrackSource" : false,
+									"RoleAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleExAttr" : {
+										"Type" : 119,
+										"Value" : "-200",
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSkill" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSystemAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"ExDiceData" : {
+										"ExploreSkill" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"HeroAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"ExtraAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										}
+									}
+								}
+							],
+							"CannnotRecoverOnRemove" : false,
+							"IsRemove" : false,
+							"SourceKey" : "1914860324Buff_RoleAttrOption"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 3,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_IgnoreMagicSanCostOption,Assembly-CSharp",
+							"IsIgnore" : false,
+							"SourceKey" : "-1852778408Buff_IgnoreMagicSanCostOption"
+						},{
+							"__type" : "MOD.Buff_MagicMaxDamageOption,Assembly-CSharp",
+							"IsMax" : false,
+							"SourceKey" : "653730828Buff_MagicMaxDamageOption"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 12,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_IgnoreMagicSanCostOption,Assembly-CSharp",
+							"IsIgnore" : false,
+							"SourceKey" : "-895376840Buff_IgnoreMagicSanCostOption"
+						},{
+							"__type" : "MOD.Buff_MagicMaxDamageOption,Assembly-CSharp",
+							"IsMax" : false,
+							"SourceKey" : "-1965783724Buff_MagicMaxDamageOption"
+						},{
+							"__type" : "MOD.Buff_BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 2,
+							"BuffId" : 119,
+							"TargetType" : 1,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsSelf" : false,
+							"SourceKey" : "-1231226516Buff_BuffChangeOption"
+						},{
+							"__type" : "MOD.Buff_BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 2,
+							"BuffId" : 334,
+							"TargetType" : 1,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsSelf" : false,
+							"SourceKey" : "1188191636Buff_BuffChangeOption"
+						},{
+							"__type" : "MOD.Buff_BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 2,
+							"BuffId" : -10075,
+							"TargetType" : 1,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsSelf" : false,
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 16,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 1,
+							"BuffId" : -10075,
+							"TargetType" : 2,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsSelf" : false,
+							"SourceKey" : "2104437100Buff_BuffChangeOption"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 2,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 1,
+							"BuffId" : -10075,
+							"TargetType" : 2,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsSelf" : false,
+							"SourceKey" : "338388842Buff_BuffChangeOption"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 7,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 1,
+							"BuffId" : -10075,
+							"TargetType" : 17,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsSelf" : false,
+							"SourceKey" : "577821700Buff_BuffChangeOption"
+						}
+					],
+					"CanBeDisabled" : false
+				}
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

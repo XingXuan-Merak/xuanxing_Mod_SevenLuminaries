@@ -1,0 +1,2393 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.BuffTableData,Assembly-CSharp",
+			"IconPath" : null,
+			"Id" : -10075,
+			"Name" : {
+				"TarKey" : "13852e7d1a48c33c3c0bbb33a1200bcb",
+				"SheetKey" : "",
+				"InputText" : "晦",
+				"Characteristic" : null
+			},
+			"Des" : {
+				"TarKey" : "",
+				"SheetKey" : "",
+				"InputText" : "层数增加时，扣除1%当前生命值\n每增加5层，额外扣除百分比当前层数的生命值",
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1007,
+				"Key" : "icon_buff_kuangbaotizhi"
+			},
+			"Comment" : "七曜",
+			"BuffType" : 1,
+			"BuffEffectType" : 2,
+			"OverlayType" : 1,
+			"LayerCount" : {
+				"Value" : "1"
+			},
+			"OverrideInitLayer" : false,
+			"InitLayer" : 0,
+			"MaxLayer" : 0,
+			"FxPlayType" : 1,
+			"UseFxPrefab" : {
+				"FxPath" : null,
+				"UseFrameEffect" : false,
+				"FxRes" : {
+					"ReferenceType" : 10001,
+					"Key" : null
+				},
+				"EffectName" : null,
+				"EffectAnimName" : null,
+				"PlayPoint" : 0
+			},
+			"PlayFxInBattle" : false,
+			"PlayFxInExplore" : false,
+			"DelayTime" : 0,
+			"EffectClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"EndClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"IsClipLoop" : false,
+			"Duration" : 0,
+			"Priority" : 0,
+			"IsDeathClear" : true,
+			"IsShowUI" : true,
+			"Arrts" : [
+				
+			],
+			"Events" : [
+				{
+					"EBuffTrigger" : 11,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsBuffLayer" : false,
+							"IsBuffType" : false,
+							"BuffEffectType" : 0,
+							"MaxCount" : 0,
+							"ChangeByBuffLayerChange" : false,
+							"ChangeByMaxGoodAtSkillCount" : false,
+							"ChangeToMax" : false,
+							"MaxRatio" : 1,
+							"Datas" : [
+								{
+									"IsTrackSource" : false,
+									"RoleAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleExAttr" : {
+										"Type" : 101,
+										"Value" : null,
+										"IsRatio" : true,
+										"Ratio" : 0.99
+									},
+									"RoleSkill" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSystemAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"ExDiceData" : {
+										"ExploreSkill" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"HeroAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"ExtraAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										}
+									}
+								}
+							],
+							"CannnotRecoverOnRemove" : true,
+							"IsRemove" : false,
+							"SourceKey" : "-529071720Buff_RoleAttrOption"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 11,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 5
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数5",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数5",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : "-2031629100Buff_SaveRecordOption"
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.95
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : "1450450504Buff_RoleAttrOption"
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "-331219152Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 10
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数10",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数10",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : "1108218558Buff_SaveRecordOption"
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.9
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : "675896670Buff_RoleAttrOption"
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "147481632Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 15
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数15",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数15",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : "1348416704Buff_SaveRecordOption"
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.85
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : "-98657164Buff_RoleAttrOption"
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "626182416Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 20
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数20",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数20",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : "-16995476Buff_SaveRecordOption"
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.8
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : "-873210998Buff_RoleAttrOption"
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "1104883200Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 25
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数25",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数25",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : "-1758299266Buff_SaveRecordOption"
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.75
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : "1872648630Buff_RoleAttrOption"
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "-244649232Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 30
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数30",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数30",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : "1450625522Buff_SaveRecordOption"
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.7
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : "1098094796Buff_RoleAttrOption"
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "234051552Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 35
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数35",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数35",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : "1452238564Buff_SaveRecordOption"
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.65
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : "323540962Buff_RoleAttrOption"
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "712752336Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 40
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数40",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数40",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.6
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "1191453120Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 45
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数45",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数45",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.55
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "1670153904Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 50
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数50",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数50",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.5
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "-2146112608Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 55
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数55",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数55",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.45
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "-1667411824Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 60
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数60",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数60",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.4
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "-1188711040Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 65
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数65",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数65",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.35
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "-710010256Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 70
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数70",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数70",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.3
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "-231309472Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 75
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数75",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数75",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.25
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "247391312Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 80
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数80",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数80",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.2
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "726092096Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 85
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数85",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数85",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.15
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "1444143272Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 90
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数90",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数90",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.1
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "1922844056Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 95
+								},{
+									"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+									"Key" : "层数95",
+									"IsCompareValue" : false,
+									"CompareType" : 0,
+									"CompareValue" : 0,
+									"CompareWithBattleRound" : false,
+									"Not" : true
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "层数95",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0.05
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "-1893422456Buff_CheckOption"
+						},{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_LayerCheck,Assembly-CSharp",
+									"IsSelf" : true,
+									"BuffId" : 0,
+									"IncludeNoBuff" : false,
+									"CompareType" : 4,
+									"Value" : 100
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+									"TargetType" : 0,
+									"TargetAddData" : {
+										"SpecificTagData" : {
+											"Tags" : [
+												
+											],
+											"Not" : false
+										},
+										"CharacterIds" : [
+											
+										],
+										"IncludeDeath" : false,
+										"BuffId" : 0
+									},
+									"IsBuffLayer" : false,
+									"IsBuffType" : false,
+									"BuffEffectType" : 0,
+									"MaxCount" : 0,
+									"ChangeByBuffLayerChange" : false,
+									"ChangeByMaxGoodAtSkillCount" : false,
+									"ChangeToMax" : false,
+									"MaxRatio" : 1,
+									"Datas" : [
+										{
+											"IsTrackSource" : false,
+											"RoleAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleExAttr" : {
+												"Type" : 101,
+												"Value" : null,
+												"IsRatio" : true,
+												"Ratio" : 0
+											},
+											"RoleSkill" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"RoleSystemAttr" : {
+												"Type" : 0,
+												"Value" : null,
+												"IsRatio" : false,
+												"Ratio" : 0
+											},
+											"ExDiceData" : {
+												"ExploreSkill" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"HeroAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												},
+												"ExtraAttribute" : {
+													"Type" : 0,
+													"ChangeAll" : false,
+													"IsTemp" : false,
+													"Value" : 0
+												}
+											}
+										}
+									],
+									"CannnotRecoverOnRemove" : true,
+									"IsRemove" : false,
+									"SourceKey" : null
+								},{
+									"__type" : "MOD.Buff_SetRoleLifeState,Assembly-CSharp",
+									"State" : 3,
+									"EnableFracture" : true,
+									"SourceKey" : null
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "-1414721672Buff_CheckOption"
+						}
+					],
+					"CanBeDisabled" : false
+				}
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

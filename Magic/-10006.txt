@@ -1,0 +1,229 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.MagicData,Assembly-CSharp",
+			"Id" : -10006,
+			"Name" : {
+				"TarKey" : "6d214379e58699423a9b0561a0696178",
+				"SheetKey" : "",
+				"InputText" : "魔力风暴",
+				"Characteristic" : null
+			},
+			"MagicDesc" : {
+				"TarKey" : "2560ed86bbcb2f6895a5d052d28cbd68",
+				"SheetKey" : "",
+				"InputText" : "释放魔力，生成一道魔力风暴",
+				"Characteristic" : null
+			},
+			"EffectDesc" : {
+				"TarKey" : "7585bacc3bbaecd46bd82791e8c475ad",
+				"SheetKey" : "",
+				"InputText" : "生成一道魔力风暴，强制中断场上敌我全体所有行动",
+				"Characteristic" : null
+			},
+			"SpritePath" : "UI\/Textures\/Icon\/MagicCard\/icon_magic_weiruizhiyin",
+			"SpritePathReference" : {
+				"ReferenceType" : 1008,
+				"Key" : "icon_magic_weiruizhiyin"
+			},
+			"Type" : 4,
+			"CannotBeCancelled" : true,
+			"MagicGetType" : 2,
+			"ShowCheckList" : [
+				
+			],
+			"AnyCheckReach" : false,
+			"BuffsLink" : [
+				
+			],
+			"Terms" : [
+				
+			],
+			"DisableOverlay" : false,
+			"UseLimit" : 1,
+			"TargetSelectDatas" : [
+				{
+					"Checks" : [
+						
+					],
+					"TargetType" : 10,
+					"TargetId" : 0,
+					"UseWeaponTargetType" : false,
+					"RandomSelectTarget" : false,
+					"CanChooseDeathRole" : false
+				}
+			],
+			"CheckList" : [
+				
+			],
+			"AnyLimitCheckReach" : false,
+			"TargetFilterExcluded" : false,
+			"Costs" : [
+				{
+					"DataType" : 2,
+					"Attribute" : 0,
+					"ExtraAttr" : 103,
+					"Skill" : 0,
+					"ItemFilter" : null,
+					"Count" : "10",
+					"CostType" : 1
+				},{
+					"DataType" : 2,
+					"Attribute" : 0,
+					"ExtraAttr" : 102,
+					"Skill" : 0,
+					"ItemFilter" : null,
+					"Count" : "10",
+					"CostType" : 1
+				}
+			],
+			"CostRound" : 1,
+			"NeedDice" : false,
+			"DiceType" : 0,
+			"DiceCheckType" : 0,
+			"ResultCheckType" : 0,
+			"DiceConfig" : {
+				"SelfDiceData" : null,
+				"TargetDiceData" : null
+			},
+			"SkillValue" : 0,
+			"NeedDamage" : false,
+			"CustomDamage" : {
+				"DamageType" : 0,
+				"AttackType" : 0,
+				"AddAttrs" : [
+					
+				],
+				"Value" : "0",
+				"DB_Bonus" : 0,
+				"WithSuckBlood" : false,
+				"SuckBloodRatio" : 0,
+				"UseCommonEffect" : false,
+				"CommonEffectId" : 1,
+				"EffectShow" : {
+					"Duration" : 0,
+					"EffectShows" : [
+						
+					]
+				},
+				"IsDirectDeath" : false,
+				"IsNotBlock" : false
+			},
+			"DamageValueType" : 0,
+			"IsCritical" : false,
+			"DamageRatio" : 1,
+			"MagicEffectList" : [
+				{
+					"Trigger" : 5,
+					"EffectChecks" : [
+						
+					],
+					"EffectOption" : [
+						{
+							"__type" : "BattleSkillEvent.PlayEffectShowOption,Assembly-CSharp",
+							"TargetType" : 1,
+							"UseCommonEffect" : false,
+							"CommonEffectId" : 0,
+							"EffectShow" : {
+								"Duration" : 5.5,
+								"EffectShows" : [
+									{
+										"__type" : "MOD.PlaySoundData,Assembly-CSharp",
+										"AudioClip" : {
+											"AudioRes" : "Sound\/Audio\/FX\/Battle\/skill_42",
+											"AudioReference" : {
+												"ReferenceType" : 2,
+												"Key" : "skill_42"
+											},
+											"Volume" : 1,
+											"FadeTime" : 0
+										},
+										"IsLoop" : false,
+										"StopOnBattleFinish" : false,
+										"DelayTime" : 0.2
+									},{
+										"__type" : "MOD.PlayRoleEffectData,Assembly-CSharp",
+										"IsSelf" : false,
+										"UseFrameEffect" : false,
+										"FxPath" : "Effect\/Prefabs\/FXSkill42",
+										"FxPathReference" : {
+											"ReferenceType" : 0,
+											"Key" : null
+										},
+										"EffectName" : null,
+										"EffectAnimName" : null,
+										"Duration" : 5.5,
+										"PlayCenterPoint" : true,
+										"UseSameFx" : true,
+										"PointUseFrameEffect" : false,
+										"PlayCenterPointFxPath" : null,
+										"PointFxPathReference" : {
+											"ReferenceType" : 0,
+											"Key" : null
+										},
+										"PointEffectName" : null,
+										"PointEffectAnimName" : null,
+										"PointType" : 0,
+										"IsGroupCenter" : true,
+										"DelayTime" : 0.2
+									},{
+										"__type" : "MOD.PlayRoleAnimationData,Assembly-CSharp",
+										"IsSelf" : false,
+										"AnimtorName" : "Hit",
+										"SpriteAnimName" : null,
+										"BackToDefault" : true,
+										"SpriteAnimFirst" : false,
+										"StartTime" : 0,
+										"DelayTime" : 4.2
+									}
+								]
+							},
+							"IsUnBlock" : false
+						},{
+							"__type" : "BattleSkillEvent.ClearCurrentActionOption,Assembly-CSharp",
+							"TargetType" : 1,
+							"IsForce" : true
+						}
+					],
+					"AnyCheckReach" : false
+				}
+			],
+			"EffectShow" : {
+				"Duration" : 1.8,
+				"EffectShows" : [
+					{
+						"__type" : "MOD.PlayRoleEffectData,Assembly-CSharp",
+						"IsSelf" : true,
+						"UseFrameEffect" : false,
+						"FxPath" : "Effect\/Prefabs\/FX_Role_Obliviate",
+						"FxPathReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"EffectName" : null,
+						"EffectAnimName" : null,
+						"Duration" : 1.8,
+						"PlayCenterPoint" : false,
+						"UseSameFx" : true,
+						"PointUseFrameEffect" : false,
+						"PlayCenterPointFxPath" : null,
+						"PointFxPathReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"PointEffectName" : null,
+						"PointEffectAnimName" : null,
+						"PointType" : 2,
+						"IsGroupCenter" : false,
+						"DelayTime" : 0
+					}
+				]
+			},
+			"BindingCharacter" : false,
+			"BindingHero" : false,
+			"BindingCharacterId" : 0,
+			"EditorSheetKey" : null
+		}
+	}
+}

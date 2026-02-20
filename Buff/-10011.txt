@@ -1,0 +1,453 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.BuffTableData,Assembly-CSharp",
+			"IconPath" : null,
+			"Id" : -10011,
+			"Name" : {
+				"TarKey" : "d72dc4a337b5545ccfe4a85ebd927693",
+				"SheetKey" : "",
+				"InputText" : "法术追击",
+				"Characteristic" : null
+			},
+			"Des" : {
+				"TarKey" : "66d4a479fe5618f6d331ac913290ac31",
+				"SheetKey" : "",
+				"InputText" : "攻击造成伤害时消耗1点魔力对其追加5点法术伤害并施加【洞察】",
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1007,
+				"Key" : "icon_buff_shijietouying"
+			},
+			"Comment" : "七曜",
+			"BuffType" : 1,
+			"BuffEffectType" : 1,
+			"OverlayType" : 2,
+			"LayerCount" : {
+				"Value" : null
+			},
+			"OverrideInitLayer" : false,
+			"InitLayer" : 0,
+			"MaxLayer" : 0,
+			"FxPlayType" : 1,
+			"UseFxPrefab" : {
+				"FxPath" : "",
+				"UseFrameEffect" : false,
+				"FxRes" : {
+					"ReferenceType" : 10001,
+					"Key" : null
+				},
+				"EffectName" : null,
+				"EffectAnimName" : null,
+				"PlayPoint" : 0
+			},
+			"PlayFxInBattle" : false,
+			"PlayFxInExplore" : false,
+			"DelayTime" : 0,
+			"EffectClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"EndClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"IsClipLoop" : false,
+			"Duration" : 0,
+			"Priority" : 0,
+			"IsDeathClear" : false,
+			"IsShowUI" : true,
+			"Arrts" : [
+				
+			],
+			"Events" : [
+				{
+					"EBuffTrigger" : 7,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						{
+							"__type" : "MOD.Buff_DamageCheck,Assembly-CSharp",
+							"CheckDamageType" : false,
+							"DamageType" : 0,
+							"DamageAttr" : 0,
+							"SkillID" : 0,
+							"CheckWeapon" : false,
+							"WeaponAttackType" : 0,
+							"WeaponId" : 0,
+							"CheckMonsterSkill" : false,
+							"IsMonsterSkill" : false,
+							"CheckAttacker" : false,
+							"CheckTarget" : true,
+							"IsHero" : false,
+							"CharacterId" : 0,
+							"CheckAllySide" : false,
+							"IsEnemy" : false,
+							"CheckDamageValue" : true,
+							"DamageCompareType" : 3,
+							"CompareWithMaxHp" : false,
+							"CompareRatio" : 0,
+							"DamageCompareValue" : 0,
+							"IgnoreDamageValue" : false
+						},{
+							"__type" : "MOD.Buff_SelfValueCheck,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"Attribute" : 0,
+							"Skill" : 0,
+							"ExtraAttr" : 103,
+							"CompareType" : 3,
+							"CompareValue" : 0,
+							"CompareWithMaxValue" : false,
+							"MaxValueRatio" : 1,
+							"IsRoundCompareType" : false
+						}
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsBuffLayer" : false,
+							"IsBuffType" : false,
+							"BuffEffectType" : 0,
+							"MaxCount" : 0,
+							"ChangeByBuffLayerChange" : false,
+							"ChangeByMaxGoodAtSkillCount" : false,
+							"ChangeToMax" : false,
+							"MaxRatio" : 1,
+							"Datas" : [
+								{
+									"IsTrackSource" : false,
+									"RoleAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleExAttr" : {
+										"Type" : 103,
+										"Value" : "-1",
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSkill" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSystemAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"ExDiceData" : {
+										"ExploreSkill" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"HeroAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"ExtraAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										}
+									}
+								}
+							],
+							"CannnotRecoverOnRemove" : false,
+							"IsRemove" : false,
+							"SourceKey" : "-594403096Buff_RoleAttrOption"
+						},{
+							"__type" : "MOD.Buff_DamageOption,Assembly-CSharp",
+							"IsDirectDamage" : true,
+							"DamageRatio" : 1,
+							"Damage" : {
+								"DamageType" : 2,
+								"AttackType" : 3,
+								"AddAttrs" : [
+									14
+								],
+								"Value" : "5",
+								"DB_Bonus" : 0,
+								"WithSuckBlood" : false,
+								"SuckBloodRatio" : 0,
+								"UseCommonEffect" : false,
+								"CommonEffectId" : 1,
+								"EffectShow" : {
+									"Duration" : 4,
+									"EffectShows" : [
+										{
+											"__type" : "MOD.PlayRoleEffectData,Assembly-CSharp",
+											"IsSelf" : false,
+											"UseFrameEffect" : false,
+											"FxPath" : "Effect\/Prefabs\/FXSkill04",
+											"FxPathReference" : {
+												"ReferenceType" : 10001,
+												"Key" : "FXSkill04"
+											},
+											"EffectName" : null,
+											"EffectAnimName" : null,
+											"Duration" : 3.8,
+											"PlayCenterPoint" : false,
+											"UseSameFx" : true,
+											"PointUseFrameEffect" : false,
+											"PlayCenterPointFxPath" : null,
+											"PointFxPathReference" : {
+												"ReferenceType" : 0,
+												"Key" : null
+											},
+											"PointEffectName" : null,
+											"PointEffectAnimName" : null,
+											"PointType" : 2,
+											"IsGroupCenter" : false,
+											"DelayTime" : 0
+										},{
+											"__type" : "MOD.PlayHitData,Assembly-CSharp",
+											"DelayTime" : 0
+										},{
+											"__type" : "MOD.PlayRoleAnimationData,Assembly-CSharp",
+											"IsSelf" : false,
+											"AnimtorName" : "Hit",
+											"SpriteAnimName" : null,
+											"BackToDefault" : true,
+											"SpriteAnimFirst" : false,
+											"StartTime" : 0,
+											"DelayTime" : 0
+										}
+									]
+								},
+								"IsDirectDeath" : false,
+								"IsNotBlock" : true
+							},
+							"TargetType" : 17,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"ReplaceDamageByRecoverValue" : false,
+							"UseBuffLayer" : false,
+							"HitToSevereWound" : false,
+							"HitToDeath" : false,
+							"IsUnblock" : true,
+							"MinDamage" : 0,
+							"SourceKey" : "1291622152Buff_DamageOption"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 4,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						{
+							"__type" : "MOD.Buff_CheckBattleActionOption,Assembly-CSharp",
+							"CheckLastUseRecord" : false,
+							"CheckId" : true,
+							"CheckMonsterSkill" : false,
+							"CheckMagicSkill" : false,
+							"SkillId" : 3,
+							"IsBattleSkill" : false,
+							"IsMagicSkill" : false,
+							"IsAttackSkill" : false,
+							"CheckBattleSkillType" : false,
+							"BattleSkillType" : 0,
+							"CheckBattleSkillTargetType" : false,
+							"TargetSelectList" : [
+								
+							]
+						},{
+							"__type" : "MOD.Buff_CheckBattleActionOption,Assembly-CSharp",
+							"CheckLastUseRecord" : false,
+							"CheckId" : true,
+							"CheckMonsterSkill" : false,
+							"CheckMagicSkill" : false,
+							"SkillId" : 4,
+							"IsBattleSkill" : false,
+							"IsMagicSkill" : false,
+							"IsAttackSkill" : false,
+							"CheckBattleSkillType" : false,
+							"BattleSkillType" : 0,
+							"CheckBattleSkillTargetType" : false,
+							"TargetSelectList" : [
+								
+							]
+						}
+					],
+					"SatisfyAny" : true,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_CheckOption,Assembly-CSharp",
+							"CheckList" : [
+								{
+									"__type" : "MOD.Buff_ItemChargingCheck,Assembly-CSharp",
+									"ItemId" : -10012,
+									"CheckEquipItem" : true,
+									"CharingCount" : 3,
+									"CompareType" : 4
+								}
+							],
+							"SatisfyAny" : false,
+							"SuccessList" : [
+								{
+									"__type" : "MOD.Buff_SaveRecordOption,Assembly-CSharp",
+									"RecordKey" : "充能追击",
+									"Count" : 0,
+									"Value" : 0,
+									"SaveCurrentBattleRound" : false,
+									"SourceKey" : "-695259718Buff_SaveRecordOption"
+								}
+							],
+							"FailList" : [
+								
+							],
+							"SourceKey" : "1530972544Buff_CheckOption"
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 3,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						{
+							"__type" : "MOD.BuffRecordCheck,Assembly-CSharp",
+							"Key" : "充能追击",
+							"IsCompareValue" : false,
+							"CompareType" : 0,
+							"CompareValue" : 0,
+							"CompareWithBattleRound" : false,
+							"Not" : false
+						}
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_RemoveRecordOption,Assembly-CSharp",
+							"RecordKey" : "充能追击",
+							"SourceKey" : "544007628Buff_RemoveRecordOption"
+						},{
+							"__type" : "MOD.Buff_TriggerBattleActionEffect,Assembly-CSharp",
+							"IsAfferentTarget" : false,
+							"TriggerBattleSkillEffect" : false,
+							"BattleSkillId" : 0,
+							"TriggerMonsterSkillEffect" : false,
+							"MonsterSkillId" : 0,
+							"TriggerMagicEffect" : false,
+							"MagicSkillId" : 0,
+							"TriggerHandAttackSkill" : true,
+							"AIActionSelectFirst" : false,
+							"IsTriggerActionEnd" : true,
+							"UseLastRecord" : true,
+							"UseLastActionTargets" : true,
+							"MagicNoCost" : true,
+							"IgnoreDiceCheck" : false,
+							"MaxTargetCount" : 0,
+							"Opts" : [
+								
+							],
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"SourceKey" : "-172204970Buff_TriggerBattleActionEffect"
+						},{
+							"__type" : "MOD.Buff_ItemChargeChangeOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"ItemId" : -10012,
+							"CalculateType" : 3,
+							"Value" : 3,
+							"ChangeEquipItem" : true,
+							"EnableReplaceConfig" : false,
+							"SourceKey" : "1770322936Buff_ItemChargeChangeOption"
+						}
+					],
+					"CanBeDisabled" : false
+				}
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

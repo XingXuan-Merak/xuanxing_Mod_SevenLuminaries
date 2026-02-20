@@ -1,0 +1,198 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.MagicData,Assembly-CSharp",
+			"Id" : -10004,
+			"Name" : {
+				"TarKey" : "1165d668683dff725bbc5f53ce9eb32e",
+				"SheetKey" : "",
+				"InputText" : "魔力冲击",
+				"Characteristic" : null
+			},
+			"MagicDesc" : {
+				"TarKey" : "3168be678be63fa0d8fb015be5520df8",
+				"SheetKey" : "",
+				"InputText" : "释放魔力，生成一道魔力冲击",
+				"Characteristic" : null
+			},
+			"EffectDesc" : {
+				"TarKey" : "8a758734f327057280cb3882f7d687b9",
+				"SheetKey" : "",
+				"InputText" : "生成一道魔力冲击，对敌方单体造成25-50点附带5倍伤害加成的法术伤害并施加【麻痹】",
+				"Characteristic" : null
+			},
+			"SpritePath" : "UI\/Textures\/Icon\/MagicCard\/icon_magic_weiruizhiyin",
+			"SpritePathReference" : {
+				"ReferenceType" : 1008,
+				"Key" : "icon_magic_weiruizhiyin"
+			},
+			"Type" : 1,
+			"CannotBeCancelled" : true,
+			"MagicGetType" : 2,
+			"ShowCheckList" : [
+				
+			],
+			"AnyCheckReach" : false,
+			"BuffsLink" : [
+				101
+			],
+			"Terms" : [
+				
+			],
+			"DisableOverlay" : false,
+			"UseLimit" : 1,
+			"TargetSelectDatas" : [
+				{
+					"Checks" : [
+						
+					],
+					"TargetType" : 2,
+					"TargetId" : 0,
+					"UseWeaponTargetType" : false,
+					"RandomSelectTarget" : false,
+					"CanChooseDeathRole" : false
+				}
+			],
+			"CheckList" : [
+				
+			],
+			"AnyLimitCheckReach" : false,
+			"TargetFilterExcluded" : false,
+			"Costs" : [
+				{
+					"DataType" : 2,
+					"Attribute" : 0,
+					"ExtraAttr" : 103,
+					"Skill" : 0,
+					"ItemFilter" : null,
+					"Count" : "5",
+					"CostType" : 1
+				},{
+					"DataType" : 2,
+					"Attribute" : 0,
+					"ExtraAttr" : 102,
+					"Skill" : 0,
+					"ItemFilter" : null,
+					"Count" : "5",
+					"CostType" : 1
+				}
+			],
+			"CostRound" : 1,
+			"NeedDice" : false,
+			"DiceType" : 0,
+			"DiceCheckType" : 0,
+			"ResultCheckType" : 0,
+			"DiceConfig" : {
+				"SelfDiceData" : null,
+				"TargetDiceData" : null
+			},
+			"SkillValue" : 0,
+			"NeedDamage" : true,
+			"CustomDamage" : {
+				"DamageType" : 2,
+				"AttackType" : 3,
+				"AddAttrs" : [
+					11
+				],
+				"Value" : "5D6+20",
+				"DB_Bonus" : 5,
+				"WithSuckBlood" : true,
+				"SuckBloodRatio" : 0.1,
+				"UseCommonEffect" : false,
+				"CommonEffectId" : 1,
+				"EffectShow" : {
+					"Duration" : 1,
+					"EffectShows" : [
+						{
+							"__type" : "MOD.PlayRoleEffectData,Assembly-CSharp",
+							"IsSelf" : true,
+							"UseFrameEffect" : false,
+							"FxPath" : "Effect\/Prefabs\/FX_Skill23",
+							"FxPathReference" : {
+								"ReferenceType" : 0,
+								"Key" : null
+							},
+							"EffectName" : null,
+							"EffectAnimName" : null,
+							"Duration" : 1,
+							"PlayCenterPoint" : false,
+							"UseSameFx" : true,
+							"PointUseFrameEffect" : false,
+							"PlayCenterPointFxPath" : null,
+							"PointFxPathReference" : {
+								"ReferenceType" : 0,
+								"Key" : null
+							},
+							"PointEffectName" : null,
+							"PointEffectAnimName" : null,
+							"PointType" : 2,
+							"IsGroupCenter" : false,
+							"DelayTime" : 0.8
+						},{
+							"__type" : "MOD.PlaySoundData,Assembly-CSharp",
+							"AudioClip" : {
+								"AudioRes" : "Sound\/Audio\/FX\/Battle\/skill_23",
+								"AudioReference" : {
+									"ReferenceType" : 2,
+									"Key" : "skill_23"
+								},
+								"Volume" : 1,
+								"FadeTime" : 1
+							},
+							"IsLoop" : false,
+							"StopOnBattleFinish" : false,
+							"DelayTime" : 0
+						},{
+							"__type" : "MOD.PlayHitData,Assembly-CSharp",
+							"DelayTime" : 0.8
+						}
+					]
+				},
+				"IsDirectDeath" : false,
+				"IsNotBlock" : false
+			},
+			"DamageValueType" : 0,
+			"IsCritical" : false,
+			"DamageRatio" : 1,
+			"MagicEffectList" : [
+				
+			],
+			"EffectShow" : {
+				"Duration" : 1.8,
+				"EffectShows" : [
+					{
+						"__type" : "MOD.PlayRoleEffectData,Assembly-CSharp",
+						"IsSelf" : true,
+						"UseFrameEffect" : false,
+						"FxPath" : "Effect\/Prefabs\/FX_Role_Obliviate",
+						"FxPathReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"EffectName" : null,
+						"EffectAnimName" : null,
+						"Duration" : 1.8,
+						"PlayCenterPoint" : false,
+						"UseSameFx" : true,
+						"PointUseFrameEffect" : false,
+						"PlayCenterPointFxPath" : null,
+						"PointFxPathReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"PointEffectName" : null,
+						"PointEffectAnimName" : null,
+						"PointType" : 2,
+						"IsGroupCenter" : false,
+						"DelayTime" : 0
+					}
+				]
+			},
+			"BindingCharacter" : false,
+			"BindingHero" : false,
+			"BindingCharacterId" : 0,
+			"EditorSheetKey" : null
+		}
+	}
+}

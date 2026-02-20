@@ -1,0 +1,680 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.BuffTableData,Assembly-CSharp",
+			"IconPath" : "UI\/Textures\/Icon\/Buff\/icon_buff_hujia",
+			"Id" : -10013,
+			"Name" : {
+				"TarKey" : "3ceac1cdd2564f7afce6f0ce2367e8a5",
+				"SheetKey" : "",
+				"InputText" : "魔力屏障",
+				"Characteristic" : null
+			},
+			"Des" : {
+				"TarKey" : "",
+				"SheetKey" : "",
+				"InputText" : "免疫法术伤害且受到的伤害减少5点，首次倒下时恢复1点生命值并移除此效果",
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1007,
+				"Key" : "icon_buff_xueroufanghu"
+			},
+			"Comment" : "七曜",
+			"BuffType" : 1,
+			"BuffEffectType" : 1,
+			"OverlayType" : 2,
+			"LayerCount" : {
+				"Value" : null
+			},
+			"OverrideInitLayer" : false,
+			"InitLayer" : 0,
+			"MaxLayer" : 0,
+			"FxPlayType" : 1,
+			"UseFxPrefab" : {
+				"FxPath" : "Effect\/Prefabs\/FX_Shield",
+				"UseFrameEffect" : false,
+				"FxRes" : {
+					"ReferenceType" : 10001,
+					"Key" : null
+				},
+				"EffectName" : null,
+				"EffectAnimName" : null,
+				"PlayPoint" : 2
+			},
+			"PlayFxInBattle" : false,
+			"PlayFxInExplore" : false,
+			"DelayTime" : 0,
+			"EffectClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"EndClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"IsClipLoop" : false,
+			"Duration" : 0,
+			"Priority" : 0,
+			"IsDeathClear" : true,
+			"IsShowUI" : true,
+			"Arrts" : [
+				
+			],
+			"Events" : [
+				{
+					"EBuffTrigger" : 1,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_PlayEffectShowOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"EffectShow" : {
+								"Duration" : 2,
+								"EffectShows" : [
+									{
+										"__type" : "MOD.PlaySoundData,Assembly-CSharp",
+										"AudioClip" : {
+											"AudioRes" : "Sound\/Audio\/FX\/Buff\/buff_333_1",
+											"AudioReference" : {
+												"ReferenceType" : 2,
+												"Key" : "buff_333_1"
+											},
+											"Volume" : 1,
+											"FadeTime" : 0
+										},
+										"IsLoop" : false,
+										"StopOnBattleFinish" : false,
+										"DelayTime" : 0
+									}
+								]
+							},
+							"IsUnBlock" : true,
+							"SourceKey" : null
+						},{
+							"__type" : "MOD.Buff_ImmuneDamageOption,Assembly-CSharp",
+							"Data" : {
+								"IsOpen" : true,
+								"ImmuMaxDamage" : false,
+								"ImmuFall" : true,
+								"IsRangeLimit" : false,
+								"MaxRangeValue" : 0,
+								"RangeResult" : 0,
+								"OnlyImmuEnemyDamage" : false,
+								"DamageTypeList" : [
+									2
+								],
+								"ReductionList" : [
+									{
+										"AddEffectType" : 0,
+										"Type" : 0,
+										"ReduceValue" : 5
+									},{
+										"AddEffectType" : 0,
+										"Type" : 1,
+										"ReduceValue" : 5
+									},{
+										"AddEffectType" : 0,
+										"Type" : 2,
+										"ReduceValue" : 5
+									}
+								],
+								"RoleReductionList" : [
+									
+								]
+							},
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 4,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						{
+							"__type" : "MOD.Buff_SelfValueCheck,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"Attribute" : 0,
+							"Skill" : 0,
+							"ExtraAttr" : 102,
+							"CompareType" : 4,
+							"CompareValue" : 3,
+							"CompareWithMaxValue" : false,
+							"MaxValueRatio" : 1,
+							"IsRoundCompareType" : false
+						},{
+							"__type" : "MOD.Buff_SelfValueCheck,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"Attribute" : 0,
+							"Skill" : 0,
+							"ExtraAttr" : 103,
+							"CompareType" : 4,
+							"CompareValue" : 3,
+							"CompareWithMaxValue" : false,
+							"MaxValueRatio" : 1,
+							"IsRoundCompareType" : false
+						}
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_RoleAttrOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsBuffLayer" : false,
+							"IsBuffType" : false,
+							"BuffEffectType" : 0,
+							"MaxCount" : 0,
+							"ChangeByBuffLayerChange" : false,
+							"ChangeByMaxGoodAtSkillCount" : false,
+							"ChangeToMax" : false,
+							"MaxRatio" : 1,
+							"Datas" : [
+								{
+									"IsTrackSource" : false,
+									"RoleAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleExAttr" : {
+										"Type" : 102,
+										"Value" : "-3",
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSkill" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSystemAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"ExDiceData" : {
+										"ExploreSkill" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"HeroAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"ExtraAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										}
+									}
+								},{
+									"IsTrackSource" : false,
+									"RoleAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleExAttr" : {
+										"Type" : 103,
+										"Value" : "-3",
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSkill" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"RoleSystemAttr" : {
+										"Type" : 0,
+										"Value" : null,
+										"IsRatio" : false,
+										"Ratio" : 0
+									},
+									"ExDiceData" : {
+										"ExploreSkill" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"HeroAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										},
+										"ExtraAttribute" : {
+											"Type" : 0,
+											"ChangeAll" : false,
+											"IsTemp" : false,
+											"Value" : 0
+										}
+									}
+								}
+							],
+							"CannnotRecoverOnRemove" : false,
+							"IsRemove" : false,
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 3,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						{
+							"__type" : "MOD.Buff_SelfValueCheck,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"Attribute" : 0,
+							"Skill" : 0,
+							"ExtraAttr" : 103,
+							"CompareType" : 0,
+							"CompareValue" : 3,
+							"CompareWithMaxValue" : false,
+							"MaxValueRatio" : 1,
+							"IsRoundCompareType" : false
+						},{
+							"__type" : "MOD.Buff_SelfValueCheck,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"Attribute" : 0,
+							"Skill" : 0,
+							"ExtraAttr" : 102,
+							"CompareType" : 0,
+							"CompareValue" : 3,
+							"CompareWithMaxValue" : false,
+							"MaxValueRatio" : 1,
+							"IsRoundCompareType" : false
+						}
+					],
+					"SatisfyAny" : true,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_PlayEffectShowOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"EffectShow" : {
+								"Duration" : 2,
+								"EffectShows" : [
+									{
+										"__type" : "MOD.PlaySoundData,Assembly-CSharp",
+										"AudioClip" : {
+											"AudioRes" : "Sound\/Audio\/FX\/Buff\/buff_333_2",
+											"AudioReference" : {
+												"ReferenceType" : 2,
+												"Key" : "buff_333_2"
+											},
+											"Volume" : 1,
+											"FadeTime" : 0
+										},
+										"IsLoop" : false,
+										"StopOnBattleFinish" : false,
+										"DelayTime" : 0
+									}
+								]
+							},
+							"IsUnBlock" : true,
+							"SourceKey" : null
+						},{
+							"__type" : "MOD.Buff_BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 2,
+							"BuffId" : -10013,
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsSelf" : false,
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 12,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_PlayEffectShowOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"EffectShow" : {
+								"Duration" : 2,
+								"EffectShows" : [
+									{
+										"__type" : "MOD.PlaySoundData,Assembly-CSharp",
+										"AudioClip" : {
+											"AudioRes" : "Sound\/Audio\/FX\/Buff\/buff_333_2",
+											"AudioReference" : {
+												"ReferenceType" : 2,
+												"Key" : "buff_333_2"
+											},
+											"Volume" : 1,
+											"FadeTime" : 0
+										},
+										"IsLoop" : false,
+										"StopOnBattleFinish" : false,
+										"DelayTime" : 0
+									}
+								]
+							},
+							"IsUnBlock" : true,
+							"SourceKey" : null
+						},{
+							"__type" : "MOD.Buff_BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 2,
+							"BuffId" : -10013,
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsSelf" : false,
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 35,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_PlayEffectShowOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"EffectShow" : {
+								"Duration" : 2,
+								"EffectShows" : [
+									{
+										"__type" : "MOD.PlaySoundData,Assembly-CSharp",
+										"AudioClip" : {
+											"AudioRes" : "Sound\/Audio\/FX\/Buff\/buff_333_2",
+											"AudioReference" : {
+												"ReferenceType" : 2,
+												"Key" : "buff_333_2"
+											},
+											"Volume" : 1,
+											"FadeTime" : 0
+										},
+										"IsLoop" : false,
+										"StopOnBattleFinish" : false,
+										"DelayTime" : 0
+									}
+								]
+							},
+							"IsUnBlock" : true,
+							"SourceKey" : null
+						},{
+							"__type" : "MOD.Buff_BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 2,
+							"BuffId" : -10013,
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsSelf" : false,
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 13,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_PlayEffectShowOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"EffectShow" : {
+								"Duration" : 2,
+								"EffectShows" : [
+									{
+										"__type" : "MOD.PlaySoundData,Assembly-CSharp",
+										"AudioClip" : {
+											"AudioRes" : "Sound\/Audio\/FX\/Buff\/buff_333_2",
+											"AudioReference" : {
+												"ReferenceType" : 2,
+												"Key" : "buff_333_2"
+											},
+											"Volume" : 1,
+											"FadeTime" : 0
+										},
+										"IsLoop" : false,
+										"StopOnBattleFinish" : false,
+										"DelayTime" : 0
+									}
+								]
+							},
+							"IsUnBlock" : true,
+							"SourceKey" : null
+						},{
+							"__type" : "MOD.Buff_BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 2,
+							"BuffId" : -10013,
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsSelf" : false,
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				}
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

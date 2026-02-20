@@ -1,0 +1,253 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.BuffTableData,Assembly-CSharp",
+			"IconPath" : "UI\/Textures\/Icon\/Buff\/icon_buff_shijiequli",
+			"Id" : -10018,
+			"Name" : {
+				"TarKey" : "4d4b877040857596362caa3b4a405510",
+				"SheetKey" : "",
+				"InputText" : "实界驱离",
+				"Characteristic" : null
+			},
+			"Des" : {
+				"TarKey" : "",
+				"SheetKey" : "",
+				"InputText" : "祂的存在正被削弱，将受到更多的伤害。层次越高的存在受到的影响越高，旧日、神话与其他将分别受到30%\/20%\/10%的伤害加深并施加【虚弱】",
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1007,
+				"Key" : "icon_buff_shijiequli"
+			},
+			"Comment" : "七曜",
+			"BuffType" : 1,
+			"BuffEffectType" : 2,
+			"OverlayType" : 2,
+			"LayerCount" : {
+				"Value" : null
+			},
+			"OverrideInitLayer" : false,
+			"InitLayer" : 0,
+			"MaxLayer" : 0,
+			"FxPlayType" : 1,
+			"UseFxPrefab" : {
+				"FxPath" : null,
+				"UseFrameEffect" : false,
+				"FxRes" : {
+					"ReferenceType" : 10001,
+					"Key" : null
+				},
+				"EffectName" : null,
+				"EffectAnimName" : null,
+				"PlayPoint" : 0
+			},
+			"PlayFxInBattle" : false,
+			"PlayFxInExplore" : false,
+			"DelayTime" : 0,
+			"EffectClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"EndClip" : {
+				"AudioRes" : null,
+				"AudioReference" : {
+					"ReferenceType" : 0,
+					"Key" : null
+				},
+				"Volume" : 1,
+				"FadeTime" : 1
+			},
+			"IsClipLoop" : false,
+			"Duration" : 1,
+			"Priority" : 0,
+			"IsDeathClear" : true,
+			"IsShowUI" : true,
+			"Arrts" : [
+				
+			],
+			"Events" : [
+				{
+					"EBuffTrigger" : 1,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						{
+							"__type" : "MOD.Buff_SelfBuffCheck,Assembly-CSharp",
+							"BuffId" : 208,
+							"Not" : false
+						}
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_ChangeAddOrReducePercentOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"ChangeByValue" : false,
+							"ChangeByBuff" : false,
+							"BuffId" : 0,
+							"Percent" : 0.3,
+							"FloorValue" : 1,
+							"ChangeValue" : 0,
+							"DamageTypes" : [
+								0,1,2
+							],
+							"ChangeType" : 1,
+							"IsRemove" : false,
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 1,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						{
+							"__type" : "MOD.Buff_SelfBuffCheck,Assembly-CSharp",
+							"BuffId" : 201,
+							"Not" : false
+						}
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_ChangeAddOrReducePercentOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"ChangeByValue" : false,
+							"ChangeByBuff" : false,
+							"BuffId" : 0,
+							"Percent" : 0.2,
+							"FloorValue" : 1,
+							"ChangeValue" : 0,
+							"DamageTypes" : [
+								0,1,2
+							],
+							"ChangeType" : 1,
+							"IsRemove" : false,
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 1,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						{
+							"__type" : "MOD.Buff_SelfBuffCheck,Assembly-CSharp",
+							"BuffId" : 208,
+							"Not" : true
+						},{
+							"__type" : "MOD.Buff_SelfBuffCheck,Assembly-CSharp",
+							"BuffId" : 201,
+							"Not" : true
+						}
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_ChangeAddOrReducePercentOption,Assembly-CSharp",
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"ChangeByValue" : false,
+							"ChangeByBuff" : false,
+							"BuffId" : 0,
+							"Percent" : 0.1,
+							"FloorValue" : 1,
+							"ChangeValue" : 0,
+							"DamageTypes" : [
+								0,1,2
+							],
+							"ChangeType" : 1,
+							"IsRemove" : false,
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				},{
+					"EBuffTrigger" : 1,
+					"DiceCheckElements" : [
+						
+					],
+					"Checks" : [
+						
+					],
+					"SatisfyAny" : false,
+					"Funcs" : [
+						{
+							"__type" : "MOD.Buff_BuffChangeOption,Assembly-CSharp",
+							"ChangeType" : 1,
+							"BuffId" : 656,
+							"TargetType" : 0,
+							"TargetAddData" : {
+								"SpecificTagData" : {
+									"Tags" : [
+										
+									],
+									"Not" : false
+								},
+								"CharacterIds" : [
+									
+								],
+								"IncludeDeath" : false,
+								"BuffId" : 0
+							},
+							"IsSelf" : false,
+							"SourceKey" : null
+						}
+					],
+					"CanBeDisabled" : false
+				}
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

@@ -1,0 +1,962 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.CareerData,Assembly-CSharp",
+			"Id" : 192424002,
+			"Name" : {
+				"TarKey" : "66c2ea01686ca1af42a65363c31ba8d5",
+				"SheetKey" : "",
+				"InputText" : "七曜",
+				"Characteristic" : null
+			},
+			"Des" : {
+				"TarKey" : "",
+				"SheetKey" : "",
+				"InputText" : "你的身份是一个迷，你的记忆如同被裹上一层黑布不可视，你具有非同常人的魔力亲和度，你决定做些力所能及之事",
+				"Characteristic" : null
+			},
+			"SkillIdsAtLeast" : [
+				101,102,201,502
+			],
+			"SkillIdsAtMost" : [
+				101,102,201,502
+			],
+			"SkillPointAlgorithm" : null,
+			"BaseGold" : 1000,
+			"BaseItems" : [
+				-10005,-10006,-10007,-10008,-10009,-10010,-10011
+			],
+			"Coin" : 50,
+			"Parts" : 50,
+			"Luck" : 50,
+			"Bullet" : 50,
+			"UnlockItem1" : 5009,
+			"UnlockItem2" : 5017,
+			"UnlockItem3" : 5027,
+			"UnlockSpecialSkillData1" : {
+				"IsExploreSkill" : false,
+				"BattleSkillId" : 51,
+				"ExploreSkillId" : 0
+			},
+			"UnlockSpecialSkillData2" : {
+				"IsExploreSkill" : false,
+				"BattleSkillId" : 49,
+				"ExploreSkillId" : 0
+			},
+			"UnlockSpecialSkillData3" : {
+				"IsExploreSkill" : false,
+				"BattleSkillId" : 53,
+				"ExploreSkillId" : 0
+			},
+			"FocusSkillCheckData1" : {
+				"Triggers" : [
+					11
+				],
+				"CheckData" : {
+					"Loc" : {
+						"TarKey" : "",
+						"SheetKey" : "",
+						"InputText" : "行动开始时",
+						"Characteristic" : null
+					},
+					"Checks" : [
+						
+					],
+					"AnyReach" : false
+				},
+				"BufffLinkList" : [
+					
+				],
+				"TermLinkList" : [
+					
+				]
+			},
+			"FocusSkillCheckData2" : {
+				"Triggers" : [
+					14
+				],
+				"CheckData" : {
+					"Loc" : {
+						"TarKey" : "",
+						"SheetKey" : "",
+						"InputText" : "使用道具时",
+						"Characteristic" : null
+					},
+					"Checks" : [
+						
+					],
+					"AnyReach" : false
+				},
+				"BufffLinkList" : [
+					
+				],
+				"TermLinkList" : [
+					
+				]
+			},
+			"FocusSkillCheckData3" : {
+				"Triggers" : [
+					6
+				],
+				"CheckData" : {
+					"Loc" : {
+						"TarKey" : "",
+						"SheetKey" : "",
+						"InputText" : "斗殴或射击检定成功时",
+						"Characteristic" : null
+					},
+					"Checks" : [
+						{
+							"__type" : "MOD.Career_DiceResultCheck,Assembly-CSharp",
+							"DiceCheckElements" : [
+								{
+									"Attr" : 0,
+									"IncludeAllAttr" : false,
+									"CheckSkill" : 101,
+									"IncludeAllSkill" : false,
+									"ExtraAttr" : 0,
+									"IncludeAllExtraAttr" : false,
+									"IncludeCustomSkill" : false,
+									"CheckResult" : 2
+								},{
+									"Attr" : 0,
+									"IncludeAllAttr" : false,
+									"CheckSkill" : 102,
+									"IncludeAllSkill" : false,
+									"ExtraAttr" : 0,
+									"IncludeAllExtraAttr" : false,
+									"IncludeCustomSkill" : false,
+									"CheckResult" : 2
+								}
+							],
+							"CheckDiceType" : false,
+							"DiceType" : 0,
+							"CheckIsCompare" : false,
+							"CompareResult" : 0,
+							"Id" : null
+						}
+					],
+					"AnyReach" : false
+				},
+				"BufffLinkList" : [
+					
+				],
+				"TermLinkList" : [
+					
+				]
+			},
+			"FocusSkillEffectData1" : {
+				"Loc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : "自身获得【加速】",
+					"Characteristic" : null
+				},
+				"BaseOpts" : [
+					{
+						"__type" : "MOD.Career_RoleRecordOption,Assembly-CSharp",
+						"IsAddRecord" : true,
+						"Key" : "专注技能2效果已触发",
+						"Count" : 0,
+						"Value" : 0,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_BuffChangeOption,Assembly-CSharp",
+						"TargetType" : 0,
+						"ChangeType" : 1,
+						"BuffId" : 502,
+						"LayerValue" : 0,
+						"IgnoreLayerChangeOnFirstRound" : false,
+						"SourceKey" : null
+					}
+				],
+				"BufffLinkList" : [
+					
+				],
+				"TermLinkList" : [
+					
+				],
+				"AdvanceLoc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : "自身获得【加速】和【迅捷】",
+					"Characteristic" : null
+				},
+				"AdvanceOpts" : [
+					{
+						"__type" : "MOD.Career_RoleRecordOption,Assembly-CSharp",
+						"IsAddRecord" : true,
+						"Key" : "专注技能2效果已触发",
+						"Count" : 0,
+						"Value" : 0,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_BuffChangeOption,Assembly-CSharp",
+						"TargetType" : 0,
+						"ChangeType" : 1,
+						"BuffId" : 502,
+						"LayerValue" : 0,
+						"IgnoreLayerChangeOnFirstRound" : false,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_BuffChangeOption,Assembly-CSharp",
+						"TargetType" : 0,
+						"ChangeType" : 1,
+						"BuffId" : 691,
+						"LayerValue" : 0,
+						"IgnoreLayerChangeOnFirstRound" : false,
+						"SourceKey" : null
+					}
+				],
+				"GoodAtBufffLinkList" : [
+					
+				],
+				"GoodAtTermLinkList" : [
+					
+				]
+			},
+			"FocusSkillEffectData2" : {
+				"Loc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : "自身恢复3点生命、精神、魔法、幸运",
+					"Characteristic" : null
+				},
+				"BaseOpts" : [
+					{
+						"__type" : "MOD.Career_RoleRecordOption,Assembly-CSharp",
+						"IsAddRecord" : true,
+						"Key" : "专注技能2效果已触发",
+						"Count" : 0,
+						"Value" : 0,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 101,
+									"Value" : "3",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 102,
+									"Value" : "3",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 103,
+									"Value" : "3",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 108,
+									"Value" : "3",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					}
+				],
+				"BufffLinkList" : [
+					
+				],
+				"TermLinkList" : [
+					
+				],
+				"AdvanceLoc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : "自身恢复5点生命、精神、魔法、幸运",
+					"Characteristic" : null
+				},
+				"AdvanceOpts" : [
+					{
+						"__type" : "MOD.Career_RoleRecordOption,Assembly-CSharp",
+						"IsAddRecord" : true,
+						"Key" : "专注技能2效果已触发",
+						"Count" : 0,
+						"Value" : 0,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 101,
+									"Value" : "5",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 102,
+									"Value" : "5",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 103,
+									"Value" : "5",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 108,
+									"Value" : "5",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					}
+				],
+				"GoodAtBufffLinkList" : [
+					
+				],
+				"GoodAtTermLinkList" : [
+					
+				]
+			},
+			"FocusSkillEffectData3" : {
+				"Loc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : "自身获得30金钱和3零件",
+					"Characteristic" : null
+				},
+				"BaseOpts" : [
+					{
+						"__type" : "MOD.Career_RoleRecordOption,Assembly-CSharp",
+						"IsAddRecord" : true,
+						"Key" : "专注技能2效果已触发",
+						"Count" : 0,
+						"Value" : 0,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 106,
+									"Value" : "30",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 117,
+									"Value" : "3",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					}
+				],
+				"BufffLinkList" : [
+					
+				],
+				"TermLinkList" : [
+					
+				],
+				"AdvanceLoc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : "自身获得50金钱和5零件",
+					"Characteristic" : null
+				},
+				"AdvanceOpts" : [
+					{
+						"__type" : "MOD.Career_RoleRecordOption,Assembly-CSharp",
+						"IsAddRecord" : true,
+						"Key" : "专注技能2效果已触发",
+						"Count" : 0,
+						"Value" : 0,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 106,
+									"Value" : "50",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					},{
+						"__type" : "MOD.Career_RoleAttrChange,Assembly-CSharp",
+						"TargetType" : 0,
+						"Datas" : [
+							{
+								"IsTrackSource" : false,
+								"RoleAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleExAttr" : {
+									"Type" : 117,
+									"Value" : "5",
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSkill" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"RoleSystemAttr" : {
+									"Type" : 0,
+									"Value" : null,
+									"IsRatio" : false,
+									"Ratio" : 0
+								},
+								"ExDiceData" : {
+									"ExploreSkill" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"HeroAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									},
+									"ExtraAttribute" : {
+										"Type" : 0,
+										"ChangeAll" : false,
+										"IsTemp" : false,
+										"Value" : 0
+									}
+								}
+							}
+						],
+						"IsRemove" : false,
+						"SourceKey" : null
+					}
+				],
+				"GoodAtBufffLinkList" : [
+					
+				],
+				"GoodAtTermLinkList" : [
+					
+				]
+			},
+			"EditorSheetKey" : null
+		}
+	}
+}

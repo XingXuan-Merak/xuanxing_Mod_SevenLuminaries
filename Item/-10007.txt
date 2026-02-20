@@ -1,0 +1,211 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.ItemData,Assembly-CSharp",
+			"IconPath" : null,
+			"ItemId" : -10007,
+			"UniqueKey" : null,
+			"ItemName" : {
+				"TarKey" : "8c66caecaf7f10bab18bb4cd462f475c",
+				"SheetKey" : "",
+				"InputText" : "七曜碎片·黄",
+				"Characteristic" : null
+			},
+			"ItemDes" : {
+				"TarKey" : "8cae474392ed228289c2166c6a69ff29",
+				"SheetKey" : "",
+				"InputText" : "七曜水晶的一部分",
+				"Characteristic" : null
+			},
+			"ItemEffectDes" : {
+				"TarKey" : "",
+				"SheetKey" : "",
+				"InputText" : null,
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1004,
+				"Key" : "icon_item_baiseshuijing"
+			},
+			"Price" : 0,
+			"ChargingCount" : 0,
+			"ReplaceChargingConfig" : [
+				
+			],
+			"AutoDestruct" : false,
+			"Disassemble" : {
+				"Items" : {
+					"Type" : 7,
+					"Ids" : [
+						
+					]
+				},
+				"PartsCount" : 0
+			},
+			"IsCantDisboard" : false,
+			"DesignTag" : 0,
+			"TagList" : [
+				"七曜"
+			],
+			"ItemAttrValue" : [
+				6
+			],
+			"MythicalId" : 0,
+			"ItemType" : 3,
+			"ItemStaticAffixList" : [
+				
+			],
+			"ItemDynamicAffixList" : [
+				
+			],
+			"IsBindCharacter" : false,
+			"BuffsLink" : [
+				
+			],
+			"Terms" : [
+				
+			],
+			"ConfigData" : [
+				
+			],
+			"EquipmentConfigData" : {
+				"__type" : "MOD.EquipConfigData,Assembly-CSharp",
+				"EquipType" : 0,
+				"ShowConfirmEquipPopup" : false,
+				"ConfirmEquipDesc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : null,
+					"Characteristic" : null
+				},
+				"InfoDatas" : [
+					{
+						"DisableTrigger" : false,
+						"TriggerType" : 2,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_AddBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									-10004
+								],
+								"RandomAddBuff" : false,
+								"AddToHero" : false,
+								"AddToSource" : true,
+								"AddToAttackTarget" : false,
+								"SourceKey" : null
+							}
+						]
+					},{
+						"DisableTrigger" : false,
+						"TriggerType" : 7,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_RemoveBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									-10004
+								],
+								"RemoveHero" : false,
+								"RemoveSource" : true,
+								"SourceKey" : null
+							}
+						]
+					}
+				],
+				"EnableOverrideDesc" : true,
+				"OverrideDesc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : "受到了七曜的加护，法术速度+200",
+					"Characteristic" : null
+				},
+				"Arrts" : [
+					
+				],
+				"Skills" : [
+					
+				],
+				"Def" : {
+					"FxPath" : null,
+					"PointType" : 0,
+					"AudioClip" : {
+						"AudioRes" : null,
+						"AudioReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"Volume" : 1,
+						"FadeTime" : 1
+					},
+					"ArmorValue" : 0
+				}
+			},
+			"ThrowConfigData" : {
+				"CanThrowOnNoCharge" : false,
+				"PlayThrowAnim" : false,
+				"ThrowAnimtorName" : null,
+				"ThrowSpriteAnimName" : null,
+				"DiceCheckType" : 1,
+				"ResultCheckType" : 1,
+				"ExploreSkill" : 201,
+				"UseTag" : 1002,
+				"LimitType" : 1,
+				"TargetSelect" : 0,
+				"CanSelectDeathRole" : false,
+				"TargetFilter" : {
+					"RoleFilter" : [
+						
+					],
+					"EnableMaxMinFilter" : false,
+					"Attribute" : 0,
+					"Skill" : 0,
+					"ExtraAttr" : 0,
+					"MaxMinType" : 0,
+					"EnableDistanceFilter" : false,
+					"DistanceFilterType" : 0,
+					"EnableBuffLayerFilter" : false,
+					"BuffId" : 0,
+					"BuffLayerMaxMinType" : 0
+				},
+				"FxPath" : null,
+				"PointType" : 0,
+				"AudioClip" : {
+					"AudioRes" : null,
+					"AudioReference" : {
+						"ReferenceType" : 0,
+						"Key" : null
+					},
+					"Volume" : 1,
+					"FadeTime" : 1
+				},
+				"UsageCheck" : [
+					
+				],
+				"ConfigResultFuncs" : null,
+				"ResultFuncs" : {
+				},
+				"EnableOverrideDesc" : false,
+				"OverrideDesc" : {
+					"TarKey" : "",
+					"SheetKey" : "",
+					"InputText" : null,
+					"Characteristic" : null
+				},
+				"IgnoreInfoDesc" : false
+			},
+			"GetItemOpts" : [
+				
+			],
+			"EndingOpts" : [
+				
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}

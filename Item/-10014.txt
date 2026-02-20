@@ -1,0 +1,350 @@
+{
+	"Data" : {
+		"__type" : "BaseSheetData,Assembly-CSharp",
+		"value" : {
+			"__type" : "MOD.ItemData,Assembly-CSharp",
+			"IconPath" : "UI\/Textures\/Icon\/Item\/icon_item_suozijia",
+			"ItemId" : -10014,
+			"UniqueKey" : null,
+			"ItemName" : {
+				"TarKey" : "ff9f70499e4550c21e90a3d47205e5fd",
+				"SheetKey" : "",
+				"InputText" : "月曜",
+				"Characteristic" : null
+			},
+			"ItemDes" : {
+				"TarKey" : "d343488e9bf409e7c83679a6301940c3",
+				"SheetKey" : "",
+				"InputText" : "不动如山",
+				"Characteristic" : null
+			},
+			"ItemEffectDes" : {
+				"TarKey" : null,
+				"SheetKey" : "",
+				"InputText" : null,
+				"Characteristic" : null
+			},
+			"IconPathReference" : {
+				"ReferenceType" : 1004,
+				"Key" : "icon_item_suozijia"
+			},
+			"Price" : 0,
+			"ChargingCount" : 0,
+			"ReplaceChargingConfig" : [
+				
+			],
+			"AutoDestruct" : false,
+			"Disassemble" : {
+				"Items" : {
+					"Type" : 7,
+					"Ids" : [
+						-10005,-10006,-10007,-10008,-10009,-10010,-10011
+					]
+				},
+				"PartsCount" : 25
+			},
+			"IsCantDisboard" : false,
+			"DesignTag" : 1,
+			"TagList" : [
+				"七曜"
+			],
+			"ItemAttrValue" : [
+				6
+			],
+			"MythicalId" : 0,
+			"ItemType" : 3,
+			"ItemStaticAffixList" : [
+				
+			],
+			"ItemDynamicAffixList" : [
+				
+			],
+			"IsBindCharacter" : false,
+			"BuffsLink" : [
+				-10009,-10075,-10012,-10013,121
+			],
+			"Terms" : [
+				
+			],
+			"ConfigData" : [
+				
+			],
+			"EquipmentConfigData" : {
+				"__type" : "MOD.EquipConfigData,Assembly-CSharp",
+				"EquipType" : 2,
+				"ShowConfirmEquipPopup" : false,
+				"ConfirmEquipDesc" : {
+					"TarKey" : null,
+					"SheetKey" : "",
+					"InputText" : null,
+					"Characteristic" : null
+				},
+				"InfoDatas" : [
+					{
+						"DisableTrigger" : false,
+						"TriggerType" : 2,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_AddBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									522,-10009,-10078
+								],
+								"RandomAddBuff" : false,
+								"AddToHero" : false,
+								"AddToSource" : true,
+								"AddToAttackTarget" : false,
+								"SourceKey" : null
+							},{
+								"__type" : "MOD.Item_ImmuneBuffOption,Assembly-CSharp",
+								"Data" : {
+									"IsOpen" : true,
+									"BuffType" : 0,
+									"BuffEffectType" : 0,
+									"BuffList" : [
+										121
+									]
+								},
+								"SourceKey" : null
+							}
+						]
+					},{
+						"DisableTrigger" : false,
+						"TriggerType" : 7,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_RemoveBuffOption,Assembly-CSharp",
+								"BuffList" : [
+									522,-10009,-10078
+								],
+								"RemoveHero" : false,
+								"RemoveSource" : true,
+								"SourceKey" : null
+							},{
+								"__type" : "MOD.Item_ImmuneBuffOption,Assembly-CSharp",
+								"Data" : {
+									"IsOpen" : false,
+									"BuffType" : 0,
+									"BuffEffectType" : 0,
+									"BuffList" : [
+										121
+									]
+								},
+								"SourceKey" : null
+							}
+						]
+					},{
+						"DisableTrigger" : false,
+						"TriggerType" : 20,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_ConvertToGameOption,Assembly-CSharp",
+								"ModuleKey" : null,
+								"Opts" : [
+									{
+										"__type" : "GamePlayEvent.Hero.HeroAddBuff,Assembly-CSharp",
+										"Target_Role" : {
+											"IsHero" : false,
+											"IsUseTriggerElement" : true,
+											"TargetNodeKey" : null,
+											"TargetNpcKey" : null,
+											"ShowType" : 2
+										},
+										"IncludeTeammates" : true,
+										"BuffId" : -10013,
+										"Buffs" : [
+											
+										],
+										"IsRemove" : false,
+										"IsAddRandomly" : false,
+										"_baseKey" : "465099312"
+									}
+								],
+								"SourceKey" : null
+							}
+						]
+					},{
+						"DisableTrigger" : false,
+						"TriggerType" : 29,
+						"ItemCheckList" : [
+							
+						],
+						"BaseOptions" : [
+							{
+								"__type" : "MOD.Item_WrenchEffectOption,Assembly-CSharp",
+								"ChangeValue" : 1,
+								"MaxLayer" : 100,
+								"SourceKey" : null
+							}
+						]
+					}
+				],
+				"EnableOverrideDesc" : true,
+				"OverrideDesc" : {
+					"TarKey" : "67579aabff8cf949131f35518fc90874",
+					"SheetKey" : "",
+					"InputText" : "会使敌人优先攻击并免疫【毁甲】\n战斗开始时，赋予我方全体【魔力屏障】\r\n每当你装备中的一件物品充能减少时，使你装备中的另一件带有充能的物品获得1点充能\r\n并使该角色能将衣物类道具装备到饰品槽位中\r\n\r\n技艺：\r\n移动至队伍最前列，使其他友方受到的伤害减半且自身被击时进行反击",
+					"Characteristic" : null
+				},
+				"Arrts" : [
+					
+				],
+				"Skills" : [
+					{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10003,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10004,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10005,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : -10006,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 1,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 14,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 16,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 2,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 5,
+						"IsRemove" : false
+					},{
+						"IsMagic" : true,
+						"IsMonsterSkill" : false,
+						"BattleSkillId" : 0,
+						"MonsterBattleSkillId" : 0,
+						"MagicSkillId" : 23,
+						"IsRemove" : false
+					}
+				],
+				"Def" : {
+					"FxPath" : "Effect\/FX\/Battle\/ShieldHit\/FX_shield_hit",
+					"PointType" : 4,
+					"AudioClip" : {
+						"AudioRes" : null,
+						"AudioReference" : {
+							"ReferenceType" : 0,
+							"Key" : null
+						},
+						"Volume" : 1,
+						"FadeTime" : 1
+					},
+					"ArmorValue" : 5
+				}
+			},
+			"ThrowConfigData" : {
+				"CanThrowOnNoCharge" : false,
+				"PlayThrowAnim" : false,
+				"ThrowAnimtorName" : null,
+				"ThrowSpriteAnimName" : null,
+				"DiceCheckType" : 1,
+				"ResultCheckType" : 1,
+				"ExploreSkill" : 201,
+				"UseTag" : 1002,
+				"LimitType" : 1,
+				"TargetSelect" : 0,
+				"CanSelectDeathRole" : false,
+				"TargetFilter" : {
+					"RoleFilter" : [
+						
+					],
+					"EnableMaxMinFilter" : false,
+					"Attribute" : 0,
+					"Skill" : 0,
+					"ExtraAttr" : 0,
+					"MaxMinType" : 0,
+					"EnableDistanceFilter" : false,
+					"DistanceFilterType" : 0,
+					"EnableBuffLayerFilter" : false,
+					"BuffId" : 0,
+					"BuffLayerMaxMinType" : 0
+				},
+				"FxPath" : null,
+				"PointType" : 0,
+				"AudioClip" : {
+					"AudioRes" : null,
+					"AudioReference" : {
+						"ReferenceType" : 0,
+						"Key" : null
+					},
+					"Volume" : 1,
+					"FadeTime" : 1
+				},
+				"UsageCheck" : [
+					
+				],
+				"ConfigResultFuncs" : null,
+				"ResultFuncs" : {
+				},
+				"EnableOverrideDesc" : false,
+				"OverrideDesc" : {
+					"TarKey" : null,
+					"SheetKey" : "",
+					"InputText" : null,
+					"Characteristic" : null
+				},
+				"IgnoreInfoDesc" : false
+			},
+			"GetItemOpts" : [
+				
+			],
+			"EndingOpts" : [
+				
+			],
+			"EditorSheetKey" : null
+		}
+	}
+}
